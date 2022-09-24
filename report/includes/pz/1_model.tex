@@ -1,0 +1,467 @@
+\section{ОПИСАНИЕ МОДЕЛИ ОБЪЕКТА АВТОМАТИЗАЦИИ}
+\subsection{Организационная модель}
+
+Организационная структура - совокупность подразделений организации и их взаимосвязей,
+в рамках которой между подразделениями распределяются функциональные задачи,
+определяются полномочия и ответственность руководителей и должностных лиц.
+
+Структура предприятия устанавливается исходя из объема и содержания задач,
+решаемых предприятием, направленности и интенсивности сложившихся на предприятии
+информационных и документационных потоков и с учетом его организационных и материальных возможностей.
+
+Оргструктура представляется через органограмму и такие документы, как штатное расписание,
+устав организации и пр.
+
+Органограмма - графическое представление структуры организации.
+
+Организационная модель ОА <<Косметический салон>> представлена органограммой <<Косметический салон>>
+на рис.~\ref{fig:OrganizationnayModel}
+с использованием нотации Organizational chart методологии ARIS,
+а также таблицей <<Каталог организационных единиц>>
+на рис.~\ref{fig:OrganizationnieEdinici_katalog}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=6cm]
+        {_docs/ОрганизационнаяМодель.png}
+    \caption{Органограмма ОА <<Косметический салон>>}
+    \label{fig:OrganizationnayModel}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОрганизационныеЕдиницы_каталог.jpg}
+    \caption{Каталог организационых единиц}
+    \label{fig:OrganizationnieEdinici_katalog}
+\end{figure}
+
+\newpage
+\subsection{Функциональная модель}
+
+Функциональная модель объекта автоматизации - описание его на языке выполняемых функций и их отношений.
+Функциональная структура - структура, элементами которой являются функции,
+реализуемые подразделениями предприятия, а отношениями являются связи,
+обеспечивающие передачу между элементами предметов труда.
+Функция – это предметно-ориентированное задание или действие,
+в результате которой выполняется одна или несколько целей, стоящих перед компанией.
+Функции предприятия распределяются по компонентам оргструктуры и представляют собой иерархическое дерево,
+строящееся от общего к частному.
+На самом верхнем уровне описываются самые сложные функции,
+которые потом детализируются через свои функциональные составляющие.
+
+Функциональная модель ОА <<Косметический салон>> представлена
+на рис.~\ref{fig:FynctionalnayModel}
+с использованием нотации Process landscape методологии ARIS,
+а также таблицей <<Каталог функций>>
+на рис.~\ref{fig:Fynctii_katalog}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=8cm]
+        {_docs/ФункциональнаяМодель.png}
+    \caption{Функциональное дерево ОА "Косметический салон"}
+    \label{fig:FynctionalnayModel}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=12cm]
+        {_docs/Функции_каталог.jpg}
+    \caption{Каталог функций}
+    \label{fig:Fynctii_katalog}
+\end{figure}
+
+\newpage
+\subsection{Информационная модель}
+Информационная модель - модель объекта, представленная в виде информации,
+описывающей существенные для данного рассмотрения параметры и переменные величины объекта,
+связи между ними, входы и выходы объекта и позволяющая путём подачи на модель информации об изменениях
+входных величин моделировать возможные состояния объекта.
+
+Информационная модель ОА <<Инвентаризация>> для ИС <<Косметический салон>> включает в себя следующие документы:
+
+\begin{enumerate}
+    \item[1.] Справочные документы (рисунок~\ref{fig:CP_katalog}).
+    \item[2.] Оперативные документы (рисунок~\ref{fig:OP_katalog}).
+    \item[3.] Отчётные документы (рисунок~\ref{fig:OT_katalog}).
+\end{enumerate}
+
+% Справочные документы представлены в <<Каталоге справочных документов>> .
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_каталог.jpg}
+    \caption{Каталог справочных документов}
+    \label{fig:CP_katalog}
+\end{figure}
+
+% Оперативные документы представлены в <<Каталоге оперативных документов>> .
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОП_каталог.jpg}
+    \caption{Каталог оперативных документов}
+    \label{fig:OP_katalog}
+\end{figure}
+
+% Отчётные документы представлены в <<Каталоге отчётных документов>> .
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОТ_каталог.jpg}
+    \caption{Каталог отчётных документов}
+    \label{fig:OT_katalog}
+\end{figure}
+
+\newpage
+
+\subsubsection{Справочный документ <<Номенклатура>>}
+
+Справочник <<Номенклатура>> - содержит информацию о материалах.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Nomenkl_tipi})
+и макета (рисунок~\ref{fig:CP_Nomenkl_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_Номенкл_типы.jpg}
+    \caption{Словарь данных справочника <<Номеклатура>>}
+    \label{fig:CP_Nomenkl_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_Номенкл_макет.jpg}
+    \caption{Макет справочника <<Номеклатура>>}
+    \label{fig:CP_Nomenkl_maket}
+\end{figure}
+
+\subsubsection{Справочный документ <<Сотрудники>>}
+
+Справочник <<Сотрудники>> - содержит информацию о сотрудниках.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Sotr_tipi})
+и макета (рисунок~\ref{fig:CP_Sotr_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_Сотр_типы.jpg}
+    \caption{Словарь данных справочника <<Сотрудники>>}
+    \label{fig:CP_Sotr_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_Сотр_макет.jpg}
+    \caption{Макет справочника <<Сотрудники>>}
+    \label{fig:CP_Sotr_maket}
+\end{figure}
+
+\newpage
+
+\subsubsection{Справочный документ <<Должности сотрудника>>}
+
+Справочник <<Должности сотрудника>> - содержит перечисления должностей сотрудника.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_DoljnCotr_tipi})
+и макета (рисунок~\ref{fig:CP_DoljnCotr_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_ДолжнСотр_типы.jpg}
+    \caption{Словарь данных справочника <<Должности сотрудника>>}
+    \label{fig:CP_DoljnCotr_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_ДолжнСотр_макет.jpg}
+    \caption{Макет справочника <<Должности сотрудника>>}
+    \label{fig:CP_DoljnCotr_maket}
+\end{figure}
+
+\subsubsection{Справочный документ <<Единицы хранения>>}
+
+Справочник <<Единицы хранения>> - содержит перечисление единиц хранения.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_EdXran_tipi})
+и макета (рисунок~\ref{fig:CP_EdXran_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_ЕдХран_типы.jpg}
+    \caption{Словарь данных справочника <<Единицы хранения>>}
+    \label{fig:CP_EdXran_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_ЕдХран_макет.jpg}
+    \caption{Макет справочника <<Единицы хранения>>}
+    \label{fig:CP_EdXran_maket}
+\end{figure}
+
+\subsubsection{Справочный документ <<Мои организации>>}
+
+Справочник <<Мои организации>> - содержит информацию о моих организациях.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_MoiOrg_tipi})
+и макета (рисунок~\ref{fig:CP_MoiOrg_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_МоиОрг_типы.jpg}
+    \caption{Словарь данных справочника <<Мои организации>>}
+    \label{fig:CP_MoiOrg_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_МоиОрг_макет.jpg}
+    \caption{Макет справочника <<Мои организации>>}
+    \label{fig:CP_MoiOrg_maket}
+\end{figure}
+
+\subsubsection{Справочный документ <<Производители>>}
+
+Справочник <<Производители>> - содержит перечисление производителей.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Proizv_tipi})
+и макета (рисунок~\ref{fig:CP_Proizv_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_Произв_типы.jpg}
+    \caption{Словарь данных справочника <<Производители>>}
+    \label{fig:CP_Proizv_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_Произв_макет.jpg}
+    \caption{Макет справочника <<Производители>>}
+    \label{fig:CP_Proizv_maket}
+\end{figure}
+
+\subsubsection{Справочный документ <<Места хранения>>}
+
+Справочник <<Места хранения>> - содержит перечисление адреса с номером склада.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_MestaXran_tipi})
+и макета (рисунок~\ref{fig:CP_MestaXran_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/СП_МестаХран_типы.jpg}
+    \caption{Словарь данных справочника <<Места хранения>>}
+    \label{fig:CP_MestaXran_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+        {_docs/СП_МестаХран_макет.jpg}
+    \caption{Макет справочника <<Места хранения>>}
+    \label{fig:CP_MestaXran_maket}
+\end{figure}
+
+\newpage
+\subsubsection{Оперативный документ <<Инвентаризационная опись>>}
+
+Оперативный документ <<Инвентаризационная опись>>
+- документ, в котором отображаются результаты инвентаризации.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:OP_InvenOpis_tipi})
+и макета (рисунок~\ref{fig:OP_InvenOpis_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=12cm]
+        {_docs/ОП_ИнвенОпис_типы.jpg}
+    \caption{Словарь данных документа <<Инвентаризационная опись>>}
+    \label{fig:OP_InvenOpis_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОП_ИнвенОпис_макет.jpg}
+    \caption{Макет документа <<Инвентаризационная опись>>}
+    \label{fig:OP_InvenOpis_maket}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=7cm]
+        {_docs/ОП_ИнвенОпис_связи.png}
+    \caption{Схема информационной связи документа <<Инвентаризационная опись>>}
+    \label{fig:OP_InvenOpis_svazi}
+\end{figure}
+
+\newpage
+\subsubsection{Оперативный документ <<Приказ о создании инвентаризационной комиссии>>}
+
+Оперативный документ <<Приказ о создании инвентаризационной комиссии>>
+- документ, который формируется перед инвентаризацией товара.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:OP_PrikazSozdKomInvest_tipi})
+и макета (рисунок~\ref{fig:OP_PrikazSozdKomInvest_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОП_ПриказСоздКомИнвент_типы.jpg}
+    \caption{Словарь данных документа <<Приказ о создании инвентаризационной комиссии>>}
+    \label{fig:OP_PrikazSozdKomInvest_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОП_ПриказСоздКомИнвент_макет.jpg}
+    \caption{Макет документа <<Приказ о создании инвентаризационной комиссии>>}
+    \label{fig:OP_PrikazSozdKomInvest_maket}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=5cm]
+        {_docs/ОП_ПриказСоздКомИнвент_связи.png}
+    \caption{Схема информационной связи документа <<Приказ о создании инвентаризационной комиссии>>}
+    \label{fig:OP_PrikazSozdKomInvest_svazi}
+\end{figure}
+
+\newpage
+\subsubsection{Отчётный документ <<Акт о нестаче товара>>}
+
+Отчётный документ <<Акт о нестаче товара>>
+- формируется после проведения инвентаризации.
+Документ представлен в виде словаря данных (рисунок~\ref{fig:OT_AktNedosTov_tipi})
+и макета (рисунок~\ref{fig:OT_AktNedosTov_maket}).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОТ_АктНедосТов_типы.jpg}
+    \caption{Словарь данных документа <<Акт о нестаче товара>>}
+    \label{fig:OT_AktNedosTov_tipi}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=14cm]
+        {_docs/ОТ_АктНедосТов_макет.jpg}
+    \caption{Макет документа <<Акт о нестаче товара>>}
+    \label{fig:OT_AktNedosTov_maket}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[height=6cm]
+        {_docs/ОТ_АктНедосТов_связи.png}
+    \caption{Схема информационной связи документа <<Акт о нестаче товара>>}
+    \label{fig:OP_AktNedosTov_svazi}
+\end{figure}
+
+\newpage
+\subsection{Модель бизнес-процесса объекта автоматизации}
+
+\textbf{Процесс} - любая деятельность, в которой используются ресурсы для преобразования входов в выходы.
+Зачастую представляет из себя совокупность взаимосвязанных и совершенных работ,
+в которых результаты одной работы являются началом другой работы,
+образуя цепочку внутрненних поставщиков и потребителей.
+
+\textbf{Бизнес-процесс} - устойчивая и целенаправленная совокупность взаимосвязанных видов деятельности,
+которая по определённой технологии преобразует входной сигнал в выходной, представляющий ценность для потребителя.
+
+\textbf{eEPC} - нотация для проектирования бизнес-процессов.
+Данная нотация ARIS представляет бизнес-процесс как цепочку событий и действий (функций).
+Каждое действие инициализируется и завершается событием.
+
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]
+            {_docs/МБП_Event.png}
+        \caption{Event}
+        \label{fig:MBP_Event}
+    \end{minipage}
+    \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]
+            {_docs/МБП_Activity.png}
+        \caption{Activity}
+        \label{fig:MBP_Activity}
+    \end{minipage}
+    \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]
+            {_docs/МБП_Entity.png}
+        \caption{Entity}
+        \label{fig:MBP_Entity}
+    \end{minipage}
+    \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]
+            {_docs/МБП_Document.png}
+        \caption{Document}
+        \label{fig:MBP_Document}
+    \end{minipage}
+    \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]
+            {_docs/МБП_Location.png}
+        \caption{Location}
+        \label{fig:MBP_Location}
+    \end{minipage}
+    \begin{minipage}{0.15\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]
+            {_docs/МБП_Product.png}
+        \caption{Product}
+        \label{fig:MBP_Product}
+    \end{minipage}
+\end{figure}
+
+\textbf{Event} (см. рис.~\ref{fig:MBP_Event}) - состояние, которое является существенным для целей управления бизнесом
+и оказывает влияние или контролирует дальнейшее развитие одного или более бизнес-процессов.
+Элемент отображает события, активизирующие функции или порождаемые функциями.
+Внутри блока помещается наименование события.
+Событие именуется отглагольным существительным.
+
+\textbf{Activity} (см. рис.~\ref{fig:MBP_Activity}) - действие или набор действий, выполняемых над исходным объектом с целью получения заданного результата.
+Внутри блока помещается наименование функции (глагол или отглагольное существительное).
+Временная последовательность выполнения функций задается расположением функций на диаграмме процесса сверху вниз.
+Функция именуется глаголом или отглагольным существительным.
+
+\textbf{Location} (см. рис.~\ref{fig:MBP_Location}) - см. <<Организационная модель ОА>>.
+
+\textbf{Entity} (см. рис.~\ref{fig:MBP_Entity}) (cущность) - смысловая единица даталогической модели (ER-model, модель «сущность - связь»)
+
+\textbf{Document} (см. рис.~\ref{fig:MBP_Document}) - бумажный или электронный носитель информации.
+
+\textbf{Product} (см. рис.~\ref{fig:MBP_Product}) - ресурс или услуга, используемый как для входа в функцию, так и как результат ее выполнения.
+
+\newpage
+
+Модель бизнесс-процесса ОА <<Инвентаризация>> для ИС <<Косметический салон>> представлена на
+рисунке~\ref{fig:MBP}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=18cm]
+        {_docs/МБП.png}
+    \caption{Модель БП ОА «Инвентаризация» для ИС <<Косметический салон>>}
+    \label{fig:MBP}
+\end{figure}
+
+\newpage

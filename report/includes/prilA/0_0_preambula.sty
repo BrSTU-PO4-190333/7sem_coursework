@@ -1,0 +1,35 @@
+\usepackage{env/global}
+\usepackage{env/coursework}
+
+\usepackage{styles/section_margins}
+\usepackage{styles/listing}
+\usepackage{styles/table_of_content}
+\usepackage{styles/table}
+\usepackage{styles/url}
+
+\ESKDletter{}{К}{П}
+\def \envDocType {90}
+\def \envCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envStudentGroup.\envStudentCard~-~\envNumber~\envDocType~\envVersion}
+\def \envDocumentTopic {НАБОР ТЕСТОВЫХ ЗАДАНИЙ ДЛЯ ПРОВЕРКИ}
+
+\ESKDletter{}{К}{Р}
+\ESKDcolumnI {\ESKDfontIII \envTopic \\ \envDocumentTopic} % наименование изделия/документа
+\ESKDsignature {\envCode} % обозначение документа
+\ESKDcolumnIX {\envDepartment} % наименование или различительный индекс предприятия
+\ESKDcolumnXIfI {\envStudentSurname} % Разраб.
+\ESKDcolumnXIfII {\envTeacherSurname} % Пров.
+\ESKDcolumnXIfIV {} % (пустая строка после Пров. и перед Н. контр.)
+\ESKDcolumnXIfV {\envEspdConsultantSurname} % Н. контр.
+\ESKDcolumnXIfVI {} % Утв.
+
+\usepackage{fancybox, fancyhdr}
+\fancypagestyle{plain}
+{
+    \renewcommand{\footrulewidth}{0pt}          % Толщина отделяющей полоски снизу
+    \renewcommand{\headrulewidth}{0pt}          % Толщина отделяющей полоски сверху
+    \fancyhead[C]{\hfill\envCode\hfill\thepage} % Сверху по центру выводить код
+    \fancyfoot{}                                % Очистить нижний колонтитул
+}
+
+\def \envPrilLetter {А} % буква приложения в тиьульнике
+\renewcommand {\thefigure} {\envPrilLetter.\arabic{figure}} % Рисунок Буква.1

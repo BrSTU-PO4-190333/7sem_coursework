@@ -1,0 +1,20 @@
+\documentclass[
+    12pt, % Устанавливает размер шрифта документа (12pt, 14pt)
+    a4paper, % Лист А4
+    simple, % Тоже самое что nocolumnsxix, nocolumnxxxi и nocolumnxxxii
+    floatsection % Счётчик рисунков обнуляется каждую главу и нумеруется с номером главы, например, Рисунок 2.1
+]{eskdtext}
+
+\usepackage{includes/pz/0_0_preambula}
+
+\begin{document}
+    \input{includes/pz/0_1_title_page.tex}
+    \input{includes/pz/0_2_tz.tex}
+    \input{includes/pz/0_3_table_of_content.tex}
+    \input{includes/pz/0_4_introduction.tex}
+    \input{includes/pz/1_model.tex}
+    \input{includes/pz/2_database.tex}
+    \input{includes/pz/e_1_conclusion.tex}
+    \input{includes/pz/e_2_abbreviations.tex}
+    \input{includes/pz/e_3_literature.tex}
+\end{document}

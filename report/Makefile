@@ -1,14 +1,10 @@
-build:
-	latexmk -pdf -output-directory=_build 6_курсовая_ПО-4_Галанин_ПЗ.tex
-	latexmk -pdf -output-directory=_build 6_курсовая_ПО-4_Галанин_ПрилА.tex
-	latexmk -pdf -output-directory=_build 6_курсовая_ПО-4_Галанин_ПрилБ.tex
+docker-compose-script:
+	cd /app/report
 
-clean:
-	rm -rfv ./*/*.aux
-	rm -rfv ./*/*.fdb_latexmk
-	rm -rfv ./*/*.fls
-	rm -rfv ./*/*.log
-	rm -rfv ./*/*.out
-	rm -rfv ./*/*.pdf
-	rm -rfv ./*/*.synctex.gz
-	rm -rfv ./*/*.toc
+	latexmk -pdf -output-directory=/temp/ -jobname=KP.PO4.190333-07_81_00 main_1_PZ.tex
+	latexmk -pdf -output-directory=/temp/ -jobname=KP.PO4.190333-07_90_00 main_3_prilA.tex
+	latexmk -pdf -output-directory=/temp/ -jobname=KP.PO4.190333-07_91_00 main_4_prilB.tex
+
+	latexmk -pdf -output-directory=/temp/ -jobname=KP.PO4.190333-07_81_00.bundle main.tex
+
+	cp /temp/*.pdf /build/

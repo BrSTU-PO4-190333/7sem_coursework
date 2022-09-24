@@ -1,0 +1,23 @@
+\usepackage{env/global}
+\usepackage{env/coursework}
+
+\usepackage{styles/section_margins}
+\usepackage{styles/listing}
+\usepackage{styles/table_of_content}
+\usepackage{styles/table}
+\usepackage{styles/url}
+
+\ESKDletter{}{К}{П}
+\def \envDocType {81}
+\def \envCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envStudentGroup.\envStudentCard~-~\envNumber~\envDocType~\envVersion}
+\def \envDocumentTopic {ПОЯСНИТЕЛЬНАЯ ЗАПИСКА К КУРСОВОМУ ПРОЕКТУ}
+
+\ESKDletter{}{К}{Р}
+\ESKDcolumnI {\ESKDfontII \envTopic \\ \envDocumentTopic} % наименование изделия/документа
+\ESKDsignature {\envCode} % обозначение документа
+\ESKDcolumnIX {\envDepartment} % наименование или различительный индекс предприятия
+\ESKDcolumnXIfI {\envStudentSurname} % Разраб.
+\ESKDcolumnXIfII {\envTeacherSurname} % Пров.
+\ESKDcolumnXIfIV {} % (пустая строка после Пров. и перед Н. контр.)
+\ESKDcolumnXIfV {\envEspdConsultantSurname} % Н. контр.
+\ESKDcolumnXIfVI {} % Утв.
