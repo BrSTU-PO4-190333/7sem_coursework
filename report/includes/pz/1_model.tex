@@ -82,198 +82,421 @@
 Информационная модель ОА <<Инвентаризация>> для ИС <<Косметический салон>> включает в себя следующие документы:
 
 \begin{enumerate}
-    \item[1.] Справочные документы (рисунок~\ref{fig:CP_katalog}).
-    \item[2.] Оперативные документы (рисунок~\ref{fig:OP_katalog}).
-    \item[3.] Отчётные документы (рисунок~\ref{fig:OT_katalog}).
+    \item[1)] справочные документы (см.~таблицу~\ref{table:CPR_katalog});
+    \item[2)] оперативные документы (см.~таблицу~\ref{table:DOC_katalog});
+    \item[3)] отчётные документы (см.~таблицу~\ref{table:OTC_katalog}).
 \end{enumerate}
 
 % Справочные документы представлены в <<Каталоге справочных документов>> .
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_каталог.jpg}
+
+    \footnotesize
+
     \caption{Каталог справочных документов}
-    \label{fig:CP_katalog}
-\end{figure}
+
+    \label{table:CPR_katalog}
+
+    \begin{tabular}{|M{1cm}|M{6cm}|M{8cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор документа}&\textbf{Наименование документа}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{1cm}|p{6cm}|p{8cm}|} 
+        \hline
+        1&СПР\_Номенклатура&Номенклатура\\ \hline
+        2&СПР\_Сотрудники&Сотрудники\\ \hline
+        3&СПР\_ДолжостиСотрудника&Должности сотрудника\\ \hline
+        4&СПР\_ЕдиницыХранения&Единицы хранения\\ \hline
+        5&СПР\_МоиОрганизации&Мои организации\\ \hline
+        6&СПР\_Производители&Производители\\ \hline
+        7&СПР\_МестаХранения&Места хранения\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_каталог.jpg}
+%     \caption{Каталог справочных документов}
+%     \label{fig:CP_katalog}
+% \end{figure}
 
 % Оперативные документы представлены в <<Каталоге оперативных документов>> .
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/ОП_каталог.jpg}
+
+    \footnotesize
+
     \caption{Каталог оперативных документов}
-    \label{fig:OP_katalog}
-\end{figure}
+
+    \label{table:DOC_katalog}
+
+    \begin{tabular}{|M{1cm}|M{6cm}|M{8cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор документа}&\textbf{Наименование документа}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{1cm}|p{6cm}|p{8cm}|} 
+        \hline
+        1&ДОК\_ИнвентОпись&Инвентаризационная опись\\ \hline
+        2&ДОК\_ПриказСоздИнвентКомис&Приказ о создании инвентаризационой комиссии\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОП_каталог.jpg}
+%     \caption{Каталог оперативных документов}
+%     \label{fig:OP_katalog}
+% \end{figure}
 
 % Отчётные документы представлены в <<Каталоге отчётных документов>> .
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/ОТ_каталог.jpg}
+
+    \footnotesize
+
     \caption{Каталог отчётных документов}
-    \label{fig:OT_katalog}
-\end{figure}
+
+    \label{table:OTC_katalog}
+
+    \begin{tabular}{|M{1cm}|M{6cm}|M{8cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор документа}&\textbf{Наименование документа}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{1cm}|p{6cm}|p{8cm}|} 
+        \hline
+        1&ОТЧ\_АктНедосТов&Акт о недостаче товаров\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОТ_каталог.jpg}
+%     \caption{Каталог отчётных документов}
+%     \label{fig:OT_katalog}
+% \end{figure}
 
 \newpage
 
 \subsubsection{Справочный документ <<Номенклатура>>}
 
 Справочник <<Номенклатура>> - содержит информацию о материалах.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Nomenkl_tipi})
-и макета (рисунок~\ref{fig:CP_Nomenkl_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_Nomenklatura_tipi}).
+%и макета (см.~рисунок~\ref{fig:CP_Nomenkl_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_Номенкл_типы.jpg}
+
+    \scriptsize
+
     \caption{Словарь данных справочника <<Номеклатура>>}
-    \label{fig:CP_Nomenkl_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_Номенкл_макет.jpg}
-    \caption{Макет справочника <<Номеклатура>>}
-    \label{fig:CP_Nomenkl_maket}
-\end{figure}
+    \label{table:CPR_Nomenklatura_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Наименование&Наиманование номенклатуры&C64&\\ \hline
+        3&ЕдиницыХране нияId&Единица хранения&N16&СПР\_ЕдиницыХранения\\ \hline
+        4&ПроизводительId&Производитель номенклатуры&N16&СПР\_Производители\\ \hline
+        5&Описание&Описание номенклатуры&C1024&\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_Номенкл_типы.jpg}
+%     \caption{Словарь данных справочника <<Номеклатура>>}
+%     \label{fig:CP_Nomenkl_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_Номенкл_макет.jpg}
+%     \caption{Макет справочника <<Номеклатура>>}
+%     \label{fig:CP_Nomenkl_maket}
+% \end{figure}
 
 \subsubsection{Справочный документ <<Сотрудники>>}
 
 Справочник <<Сотрудники>> - содержит информацию о сотрудниках.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Sotr_tipi})
-и макета (рисунок~\ref{fig:CP_Sotr_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_Sotrydniki_tipi}).
+%и макета (рисунок~\ref{fig:CP_Sotr_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_Сотр_типы.jpg}
-    \caption{Словарь данных справочника <<Сотрудники>>}
-    \label{fig:CP_Sotr_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_Сотр_макет.jpg}
-    \caption{Макет справочника <<Сотрудники>>}
-    \label{fig:CP_Sotr_maket}
-\end{figure}
+    \scriptsize
 
-\newpage
+    \caption{Словарь данных справочника <<сотрудники>>}
+
+    \label{table:CPR_Sotrydniki_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Фамилия&Фамилия сотрудника&C32&\\ \hline
+        3&Имя&Имя сотрудника&C32&\\ \hline
+        4&Отчество&Отчество сотрудника&C32&\\ \hline
+        5&ДолжностиСотру дникаId&Должность сотрудника&N16&СПР\_ДолжностиСотру дника\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_Сотр_типы.jpg}
+%     \caption{Словарь данных справочника <<Сотрудники>>}
+%     \label{fig:CP_Sotr_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_Сотр_макет.jpg}
+%     \caption{Макет справочника <<Сотрудники>>}
+%     \label{fig:CP_Sotr_maket}
+% \end{figure}
+
+% \newpage
 
 \subsubsection{Справочный документ <<Должности сотрудника>>}
 
 Справочник <<Должности сотрудника>> - содержит перечисления должностей сотрудника.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_DoljnCotr_tipi})
-и макета (рисунок~\ref{fig:CP_DoljnCotr_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_DoljnostiSotrydnika_tipi}).
+%и макета (рисунок~\ref{fig:CP_DoljnCotr_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_ДолжнСотр_типы.jpg}
-    \caption{Словарь данных справочника <<Должности сотрудника>>}
-    \label{fig:CP_DoljnCotr_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_ДолжнСотр_макет.jpg}
-    \caption{Макет справочника <<Должности сотрудника>>}
-    \label{fig:CP_DoljnCotr_maket}
-\end{figure}
+    \scriptsize
+
+    \caption{Словарь данных справочника <<Сотрудники>>}
+
+    \label{table:CPR_DoljnostiSotrydnika_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Наименование&Должность сотрудника&C64&\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_ДолжнСотр_типы.jpg}
+%     \caption{Словарь данных справочника <<Должности сотрудника>>}
+%     \label{fig:CP_DoljnCotr_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_ДолжнСотр_макет.jpg}
+%     \caption{Макет справочника <<Должности сотрудника>>}
+%     \label{fig:CP_DoljnCotr_maket}
+% \end{figure}
+
+% \newpage
 
 \subsubsection{Справочный документ <<Единицы хранения>>}
 
 Справочник <<Единицы хранения>> - содержит перечисление единиц хранения.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_EdXran_tipi})
-и макета (рисунок~\ref{fig:CP_EdXran_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_EdiniciXraneniya_tipi}).
+%и макета (рисунок~\ref{fig:CP_EdXran_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_ЕдХран_типы.jpg}
+
+    \scriptsize
+
     \caption{Словарь данных справочника <<Единицы хранения>>}
-    \label{fig:CP_EdXran_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_ЕдХран_макет.jpg}
-    \caption{Макет справочника <<Единицы хранения>>}
-    \label{fig:CP_EdXran_maket}
-\end{figure}
+    \label{table:CPR_EdiniciXraneniya_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Наименование&Единица хранения&C64&\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_ЕдХран_типы.jpg}
+%     \caption{Словарь данных справочника <<Единицы хранения>>}
+%     \label{fig:CP_EdXran_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_ЕдХран_макет.jpg}
+%     \caption{Макет справочника <<Единицы хранения>>}
+%     \label{fig:CP_EdXran_maket}
+% \end{figure}
 
 \subsubsection{Справочный документ <<Мои организации>>}
 
 Справочник <<Мои организации>> - содержит информацию о моих организациях.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_MoiOrg_tipi})
-и макета (рисунок~\ref{fig:CP_MoiOrg_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_MoiOrganizatii_tipi}).
+%и макета (рисунок~\ref{fig:CP_MoiOrg_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_МоиОрг_типы.jpg}
+
+    \scriptsize
+
     \caption{Словарь данных справочника <<Мои организации>>}
-    \label{fig:CP_MoiOrg_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_МоиОрг_макет.jpg}
-    \caption{Макет справочника <<Мои организации>>}
-    \label{fig:CP_MoiOrg_maket}
-\end{figure}
+    \label{table:CPR_MoiOrganizatii_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Наименование&Название организации&C64&\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_МоиОрг_типы.jpg}
+%     \caption{Словарь данных справочника <<Мои организации>>}
+%     \label{fig:CP_MoiOrg_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_МоиОрг_макет.jpg}
+%     \caption{Макет справочника <<Мои организации>>}
+%     \label{fig:CP_MoiOrg_maket}
+% \end{figure}
 
 \subsubsection{Справочный документ <<Производители>>}
 
 Справочник <<Производители>> - содержит перечисление производителей.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_Proizv_tipi})
-и макета (рисунок~\ref{fig:CP_Proizv_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_Proizvoditeli_tipi}).
+% и макета (рисунок~\ref{fig:CP_Proizv_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_Произв_типы.jpg}
+
+    \scriptsize
+
     \caption{Словарь данных справочника <<Производители>>}
-    \label{fig:CP_Proizv_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_Произв_макет.jpg}
-    \caption{Макет справочника <<Производители>>}
-    \label{fig:CP_Proizv_maket}
-\end{figure}
+    \label{table:CPR_Proizvoditeli_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Наименование&Производитель номенклатуры&C64&\\ \hline
+    \end{tabular}
+\end{table}
+
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_Произв_типы.jpg}
+%     \caption{Словарь данных справочника <<Производители>>}
+%     \label{fig:CP_Proizv_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_Произв_макет.jpg}
+%     \caption{Макет справочника <<Производители>>}
+%     \label{fig:CP_Proizv_maket}
+% \end{figure}
 
 \subsubsection{Справочный документ <<Места хранения>>}
 
 Справочник <<Места хранения>> - содержит перечисление адреса с номером склада.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:CP_MestaXran_tipi})
-и макета (рисунок~\ref{fig:CP_MestaXran_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_MestaXraneniay_tipi}).
+% и макета (рисунок~\ref{fig:CP_MestaXran_maket}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/СП_МестаХран_типы.jpg}
+
+    \scriptsize
+
     \caption{Словарь данных справочника <<Места хранения>>}
-    \label{fig:CP_MestaXran_tipi}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[]
-        {_docs/СП_МестаХран_макет.jpg}
-    \caption{Макет справочника <<Места хранения>>}
-    \label{fig:CP_MestaXran_maket}
-\end{figure}
+    \label{table:CPR_MestaXraneniay_tipi}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Код&N16&\\ \hline
+        2&Наименование&Место хранения номенклатуры (адрес)&C64&\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/СП_МестаХран_типы.jpg}
+%     \caption{Словарь данных справочника <<Места хранения>>}
+%     \label{fig:CP_MestaXran_tipi}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[]
+%         {_docs/СП_МестаХран_макет.jpg}
+%     \caption{Макет справочника <<Места хранения>>}
+%     \label{fig:CP_MestaXran_maket}
+% \end{figure}
 
 \newpage
 \subsubsection{Оперативный документ <<Инвентаризационная опись>>}

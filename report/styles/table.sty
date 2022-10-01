@@ -1,2 +1,6 @@
 \usepackage{caption} % заголовки плавающих объектов
 \captionsetup[table]{justification=centering} % установки для заголовков таблиц
+
+\usepackage{array} % По центру таблицы, если использовать M{2cm}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
