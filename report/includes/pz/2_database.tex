@@ -1,13 +1,13 @@
 \section{РАЗРАБОТКА БАЗЫ ДАННЫХ}
 \subsection{Концептуальная модель}
 
-Предметная область - совокупность объектов,
+\textbf{Предметная область} - совокупность объектов,
 свойства которых и отношения между которыми рассматриваются в рамках некоторого исследования.
 
-Модель предметной области – некоторая система, адекватно имитирующая
+\textbf{Модель предметной области} - некоторая система, адекватно имитирующая
 структуру и функционирование исследуемой предметной области.
 
-Концептуальная модель - это структура моделируемой предметной области,
+\textbf{Концептуальная модель} - это структура моделируемой предметной области,
 свойств её элементов и причинно-следственных связей, присущих системе и
 существенных для достижения цели моделирования.
 В рамках этапа концептуального моделирования выделяются основные смысловые единицы (сущности)
@@ -17,69 +17,86 @@
 так как представляет предметную область на их уровне понимания.
 Этот уровень называется системно-независимым или предметно-ориентированным.
 
-\subsubsection{ЛКМ для БП <<Приказ о создании комиссии инвентаризационной>>}
+\subsubsection{ЛКМ для БП <<Приказ о создании инвентаризационной комиссии>>}
 
-Локальная концептуальная модель для бизнес процесса с документом <<Приказ о создании комиссии инвентаризационной>>
-изображена на рисунке~\ref{fig:LKM_PrikazSozdKomInvent}.
+Локальная концептуальная модель
+(спроектированнная с помощью ARIS Express)
+для бизнес процесса с документом <<Приказ о создании инвентаризационной комиссии>>
+изображена на рисунке~\ref{fig:DataModel_DOC_PrikazCozdInventKom}.
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=18cm]
-        {_docs/ЛКМ_ПриказСоздКомИнвент.png}
-    \caption{Локальная концептуальная модель для бизнес процесса с документом <<Приказ о создании комиссии инвентаризационной>>}
-    \label{fig:LKM_PrikazSozdKomInvent}
+    {assets/database/DataModel_DOC_PrikazCozdInventKom.adf.pdf}
+
+    \caption{Локальная концептуальная модель для бизнес процесса с документом <<Приказ о создании инвентаризационной комиссии>>}
+
+    \label{fig:DataModel_DOC_PrikazCozdInventKom}
 \end{figure}
 
 \newpage
 
 \subsubsection{ЛКМ для БП <<Инвентаризационная опись>>}
 
-Локальная концептуальная модель для бизнес процесса с документом <<Инвентаризационная опись>>
-изображена на рисунке~\ref{fig:LKM_InvenOpis}.
+Локальная концептуальная модель
+(спроектированнная с помощью ARIS Express)
+для бизнес процесса с документом <<Инвентаризационная опись>>
+изображена на рисунке~\ref{fig:DataModel_DOC_InventOpic}.
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=18cm]
-        {_docs/ЛКМ_ИнвенОпис.png}
+
+    \includegraphics[height=8cm]
+    {assets/database/DataModel_DOC_InventOpic'.adf.pdf}
+
     \caption{Локальная концептуальная модель для бизнес процесса с документом <<Инвентаризационная опись>>}
-    \label{fig:LKM_InvenOpis}
+
+    \label{fig:DataModel_DOC_InventOpic}
 \end{figure}
 
-\newpage
+% \newpage
 \subsubsection{КМ для БП ОА}
 
-Концептуальная модель для бизнес-процесса объекта автоматизации <<Инвентаризация>>
-изображена на рисунке~\ref{fig:KM}.
+Концептуальная модель
+(спроектированнная с помощью ARIS Express)
+для бизнес-процесса объекта автоматизации <<Инвентаризация>>
+изображена на рисунке~\ref{fig:DataModel_DOC}.
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=18cm]
-        {_docs/КМ.png}
+    \includegraphics[height=8cm]
+        {assets/database/DataModel_DOC.bundle.adf.pdf}
     \caption{Концептуальная модель}
-    \label{fig:KM}
+    \label{fig:DataModel_DOC}
 \end{figure}
 
 \newpage
 \subsection{Логическая модель}
 
 Логическая модель 
-изображена на рисунке~\ref{fig:KM}.
+изображена на рисунке~\ref{fig:ArchitectureDatabase}.
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=18cm]
-        {_docs/ЛМ.png}
+    {assets/database/ArchitectureDatabase.architect.pdf}
+
     \caption{Логическая модель}
-    \label{fig:LM}
+
+    \label{fig:ArchitectureDatabase}
 \end{figure}
 
 \newpage
 \subsection{Физическая модель}
 
 \lstinputlisting[language=sql]
-    {src/create_database.sql}
+{assets/database/SQL_CreateTable.sql}
+
+\newpage
 
 \lstinputlisting[language=sql]
-    {src/delete_database.sql}
+{assets/database/SQL_DropTable.sql}
 
 \newpage

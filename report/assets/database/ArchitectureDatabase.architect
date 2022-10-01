@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.7">
+ <project-name>ArchitectureDatabase</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="10e49371-d89a-4425-909f-5e44d0d3ae99" name="ДОК_ПриказСоздИнвентКомис" objectType="TABLE" physicalName="ДОК_ПриказСоздИнвентКомис" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="09d020ae-0da2-4ef1-be6b-ad41e40a38ac" autoIncrement="false" autoIncrementSequenceName="ДОК_ПриказСоздИнвентКомис_UuidПриказаСоздИнвентКомис_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="128" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="383250ae-6e34-4850-83bf-89d7a81d82b6" autoIncrement="false" autoIncrementSequenceName="ДОК_ПриказСоздИнвентКомис_Дата_seq" defaultValue="" name="Дата" nullable="0" physicalName="Дата" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="b3302675-40c9-4a2a-8395-0a1a65f9e243" autoIncrement="false" autoIncrementSequenceName="ОпД_ПриказСоздИнвентКомис_id_seq" defaultValue="" name="Номер" nullable="0" physicalName="Номер" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="8b0b3cc7-82ed-426b-bf33-7184afebb137" autoIncrement="false" autoIncrementSequenceName="Справочник_МоиОрганизации_КодСправчникаМоиОрганизации_seq" defaultValue="" name="МоиОрганизацииId" nullable="0" physicalName="МоиОрганизацииId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="f46cc48a-3419-4cda-8ede-004d199a7201" autoIncrement="false" autoIncrementSequenceName="ДОК_ПриказСоздИнвентКомис_КодСправочникаМестаХранения_seq" defaultValue="" name="МестаХраненияId" nullable="0" physicalName="МестаХраненияId" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL7" populated="true" UUID="cf046bb6-6571-414f-a54f-aee4dffcfd6d" autoIncrement="false" autoIncrementSequenceName="Справочник_Сотрудники_КодСправочникаСотрудники_seq" defaultValue="" name="СотрудникиId_ПредседательКомиссии" nullable="0" physicalName="СотрудникиId_ПредседательКомиссии" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL8" populated="true" UUID="87ac5f93-da1f-4dd9-bd8c-91b12bc9cbaa" autoIncrement="false" autoIncrementSequenceName="Справочник_Сотрудники_КодСправочникаСотрудники_seq" defaultValue="" name="СотрудникиId_СоздательПриказа" nullable="0" physicalName="СотрудникиId_СоздательПриказа" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX9" populated="true" UUID="22e3f774-0728-4d1e-97de-4f3fdf6850ef" clustered="false" name="ДОК_ПриказСоздИнвентКомис_pk" physicalName="док_приказсоздинвенткомис_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC10" populated="true" UUID="b4639d68-1edb-4c0d-a49d-06a670165f77" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB11" populated="true" UUID="1ac76a0f-1d3e-4635-9ba4-3de36ebe340f" name="ТАБ_СписокИнвентКомис" objectType="TABLE" physicalName="ТАБ_СписокИнвентКомис" >
+   <remarks></remarks>
+   <folder id="FOLTAB111" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL12" populated="true" UUID="db746685-d1c7-4acd-a28c-c017b02a8cd1" autoIncrement="true" autoIncrementSequenceName="ТАБ_СписокИнвентКомис_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL13" populated="true" UUID="2883d3e3-5685-43f7-9b60-49aeda9e34da" autoIncrement="false" autoIncrementSequenceName="ТаЧ_СписокИнвентКомис_UuidПриказаСоздИнвентКомис_seq" defaultValue="" name="ПриказСоздИнвентКомисId" nullable="0" physicalName="ПриказСоздИнвентКомисId" precision="128" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL14" populated="true" UUID="b20c80d6-bcdc-4f5e-9e13-fc287b9ae808" autoIncrement="false" autoIncrementSequenceName="ТаЧ_СписокИнвентКомис_КодСправочникаСотрудники_seq" defaultValue="" name="СотрудникиId" nullable="0" physicalName="СотрудникиId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB113" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB112" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB114" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX15" populated="true" UUID="c3bc5c14-8835-4939-821a-822f1c1a5b6c" clustered="false" name="ТАБ_СписокИнвентКомис_pk" physicalName="таб_списокинвенткомис_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC16" populated="true" UUID="37dcc34d-8698-4233-b4b5-e75115a2cbfd" ascendingOrDescending="UNSPECIFIED" column-ref="COL12" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB17" populated="true" UUID="ce3d530a-5cda-488b-9333-024bf46b69fe" name="СПР_Номенклатура" objectType="TABLE" physicalName="СПР_Номенклатура" >
+   <remarks></remarks>
+   <folder id="FOLTAB171" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL18" populated="true" UUID="5ddc3b54-3669-4fab-9dff-8f428d0712a3" autoIncrement="true" autoIncrementSequenceName="Справочник_Номенклатура_КодСправочникаНоменклатура_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="f7415924-52f7-4767-919f-a606e7da552b" autoIncrement="false" autoIncrementSequenceName="СПР_Номенклатура_Наименование_seq" defaultValue="" name="Наименование" nullable="0" physicalName="Наименование" precision="64" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="b665d761-50ae-4527-a9a1-298ebd1838a8" autoIncrement="false" autoIncrementSequenceName="СправочникЕдХранения_КодСправочникаЕдХранения_seq" defaultValue="" name="ЕдиницыХраненияId" nullable="0" physicalName="ЕдиницыХраненияId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="8f340929-c4ce-42d4-858e-f66adbf854a8" autoIncrement="false" autoIncrementSequenceName="Справочник_Номенклатура_КодСправочникаПроизвод_seq" defaultValue="" name="ПроизводителиId" nullable="0" physicalName="ПроизводителиId" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL22" populated="true" UUID="5c7dceb7-407c-4f2c-baf1-f42ba6b6cac0" autoIncrement="false" autoIncrementSequenceName="СПР_Номенклатура_Описание_seq" defaultValue="" name="Описание" nullable="0" physicalName="Описание" precision="1024" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB173" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB172" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB174" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX23" populated="true" UUID="66d73cff-7373-4148-916f-e2239a6fbbd5" clustered="false" name="СПР_Номенклатура_pk" physicalName="спр_номенклатура_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC24" populated="true" UUID="fbad331c-81ba-4415-aa2d-4846df3f3692" ascendingOrDescending="UNSPECIFIED" column-ref="COL18" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB25" populated="true" UUID="a61b834a-c51d-42db-a63f-0ff02d77699e" name="СПР_ЕдиницыХранения" objectType="TABLE" physicalName="СПР_ЕдиницыХранения" >
+   <remarks></remarks>
+   <folder id="FOLTAB251" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL26" populated="true" UUID="461b5c6f-913b-4eba-926f-4a11085644c9" autoIncrement="true" autoIncrementSequenceName="СправочникЕдХранения_КодСправочникаЕдХранения_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL27" populated="true" UUID="b5726778-9336-4490-bea9-590b15cf71d3" autoIncrement="false" autoIncrementSequenceName="СПР_ЕдиницыХранения_Наименование_seq" defaultValue="" name="Наименование" nullable="0" physicalName="Наименование" precision="64" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB253" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB252" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB254" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX28" populated="true" UUID="573c40f5-afa2-4533-8908-2b21811775a4" clustered="false" name="СПР_ЕдиницыХранения_pk" physicalName="спр_единицыхранения_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC29" populated="true" UUID="c13fdb5f-c50d-4c6c-8965-ada9ee545dad" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB30" populated="true" UUID="9b96a256-e165-4513-bb7c-2ec939dc7b14" name="СПР_Производители" objectType="TABLE" physicalName="СПР_Производители" >
+   <remarks></remarks>
+   <folder id="FOLTAB301" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL31" populated="true" UUID="97e2760a-e6b4-4a2d-9be9-7fbab1698eb7" autoIncrement="true" autoIncrementSequenceName="Справочник_Производители_КодСправочникаПроизвод_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="033a9914-7bdc-42dd-9c5b-7ab368bca1d5" autoIncrement="false" autoIncrementSequenceName="СПР_Производители_Наименование_seq" defaultValue="" name="Наименование" nullable="0" physicalName="Наименование" precision="64" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB303" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB302" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB304" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX33" populated="true" UUID="e0a2550d-e944-4b0a-95c4-4959a6c735a9" clustered="false" name="СПР_Производители_pk" physicalName="спр_производители_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC34" populated="true" UUID="d9ff26e5-276d-43c5-bf18-6bdb393ad90f" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB35" populated="true" UUID="46922b8b-a620-41ef-b092-0c1150428032" name="СПР_Сотрудники" objectType="TABLE" physicalName="СПР_Сотрудники" >
+   <remarks></remarks>
+   <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL36" populated="true" UUID="bf0991ba-0897-46f0-a619-3d6e424289f9" autoIncrement="true" autoIncrementSequenceName="Справочник_Сотрудники_КодСправочникаСотрудники_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL37" populated="true" UUID="9350f916-7d4c-454b-93bb-8348c0e1ae1f" autoIncrement="false" autoIncrementSequenceName="СПР_Сотрудники_Фамилия_seq" defaultValue="" name="Фамилия" nullable="0" physicalName="Фамилия" precision="32" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL38" populated="true" UUID="7f6018e4-95c0-4d50-800f-0a74bba858e3" autoIncrement="false" autoIncrementSequenceName="СПР_Сотрудники_Имя_seq" defaultValue="" name="Имя" nullable="0" physicalName="Имя" precision="32" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="91962ca4-7edb-4f8b-8df4-5fa6e34f67c3" autoIncrement="false" autoIncrementSequenceName="Справочник_Сотрудники_Отчёство_seq" defaultValue="" name="Отчество" nullable="0" physicalName="Отчество" precision="32" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="1971b8b4-6672-4048-80f8-4cf9374bdb06" autoIncrement="false" autoIncrementSequenceName="Справочник_ДолжностиСотрудника_id_seq" defaultValue="" name="ДолжностиСотрудникаId" nullable="0" physicalName="ДолжностиСотрудникаId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB353" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB352" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB354" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX41" populated="true" UUID="9dac0152-97fc-4c65-82bf-f53e3e40c200" clustered="false" name="СПР_Сотрудники_pk" physicalName="спр_сотрудники_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC42" populated="true" UUID="df442a1e-9aeb-4238-8907-2c4d7dce8828" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB43" populated="true" UUID="1216cffa-a78d-44a4-b0ca-bb3bd0ce7d9d" name="СПР_МестаХранения" objectType="TABLE" physicalName="СПР_МестаХранения" >
+   <remarks></remarks>
+   <folder id="FOLTAB431" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL44" populated="true" UUID="430ecbf4-3344-401f-b760-860d2241b730" autoIncrement="true" autoIncrementSequenceName="Справочник_МестаХранения_КодСправочникаМестаХранения_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL45" populated="true" UUID="21c9f78c-9f6b-4f64-9923-c1d9d3521ba5" autoIncrement="false" autoIncrementSequenceName="СПР_МестаХранения_Наименование_seq" defaultValue="" name="Наименование" nullable="0" physicalName="Наименование" precision="64" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB433" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB432" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB434" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX46" populated="true" UUID="70b13830-4665-4a84-9d70-f473e38d009b" clustered="false" name="СПР_МестаХранения_pk" physicalName="спр_местахранения_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC47" populated="true" UUID="1258c4d4-2fa5-4f67-852e-0836f39375b6" ascendingOrDescending="UNSPECIFIED" column-ref="COL44" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB48" populated="true" UUID="3e20fd51-eab0-48d2-84e1-05c0dd0c4760" name="СПР_МоиОрганизации" objectType="TABLE" physicalName="СПР_МоиОрганизации" >
+   <remarks></remarks>
+   <folder id="FOLTAB481" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL49" populated="true" UUID="5d0f7b08-0cca-4a8e-b17a-3dd8996f831c" autoIncrement="true" autoIncrementSequenceName="Справочник_МоиОрганизации_КодСправчникаМоиОрганизации_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="25853b41-2961-4c95-8367-de6999e2e5fd" autoIncrement="false" autoIncrementSequenceName="СПР_МоиОрганизации_Наименование_seq" defaultValue="" name="Наименование" nullable="0" physicalName="Наименование" precision="64" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB483" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB482" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB484" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX51" populated="true" UUID="5df5c7c5-d2ee-45eb-9749-c9c173854ba1" clustered="false" name="СПР_МоиОрганизации_pk" physicalName="спр_моиорганизации_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC52" populated="true" UUID="92335446-bc69-4360-b340-e38ceca1c52e" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB53" populated="true" UUID="23dbcc0d-b2c0-4a0b-aea8-4a4490422731" name="ДОК_ИнвентОпись" objectType="TABLE" physicalName="ДОК_ИнвентОпись" >
+   <remarks></remarks>
+   <folder id="FOLTAB531" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL54" populated="true" UUID="ddc4cfb9-8ead-48fe-8a0f-c6342df784a1" autoIncrement="false" autoIncrementSequenceName="ДОК_ИнвентОпись_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="128" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="c38a7da4-58db-4236-8b7c-e118523f4cd5" autoIncrement="false" autoIncrementSequenceName="ОпД_ИнвентОпись_id_seq" defaultValue="" name="Номер" nullable="0" physicalName="Номер" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="0bdb2781-fb88-4cff-b251-3435d1671591" autoIncrement="false" autoIncrementSequenceName="ДОК_ИнвентОпись_Дата_seq" defaultValue="" name="Дата" nullable="0" physicalName="Дата" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB533" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB532" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB534" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX57" populated="true" UUID="e7733fd7-e2dc-46c6-befe-e0c9da7b2587" clustered="false" name="ДОК_ИнвентОпись_pk" physicalName="док_инвентопись_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC58" populated="true" UUID="25f3fedf-ebf1-4594-9f8e-e5b7cccffb66" ascendingOrDescending="UNSPECIFIED" column-ref="COL54" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB59" populated="true" UUID="d222db9b-aed5-49d2-836e-f9db7f9f4e52" name="ТАБ_СписокНоменклИнвентОписи" objectType="TABLE" physicalName="ТАБ_СписокНоменклИнвентОписи" >
+   <remarks></remarks>
+   <folder id="FOLTAB591" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL60" populated="true" UUID="dc8b9491-b011-4ef9-b0e5-a9d9fa6c059d" autoIncrement="true" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL61" populated="true" UUID="65b3f9c5-c8fb-4b75-9908-f16064653d9a" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_id_seq" defaultValue="" name="ИнвентОписьId" nullable="0" physicalName="ИнвентОписьId" precision="128" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="c072a75c-ba5f-454a-8a99-67a41f6445b5" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_КодСправочникаНоменклатура_seq" defaultValue="" name="НоменклатураId" nullable="0" physicalName="НоменклатураId" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="9ca8b97a-b9e0-4df0-b474-83b935da3b52" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_Цена_seq" defaultValue="" name="Цена" nullable="0" physicalName="Цена" precision="6" referenceCount="1" scale="2" sourceDataTypeName="UserDefinedSQLType" type="3" userDefinedTypeUUID="cc1304ea-628a-4fc5-a84a-06ba14759152" >
+     <remarks></remarks>
+    </column>
+    <column id="COL64" populated="true" UUID="d421caf2-d9bd-4774-a0c8-7c79c7c24cbc" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_КоличПоДаннымБухУчёта_seq" defaultValue="" name="КоличПоДаннымБухУчёта" nullable="0" physicalName="КоличПоДаннымБухУчёта" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL65" populated="true" UUID="9af0eb87-1e2b-4638-ad78-bac6a03b4818" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_КоличФактич_seq" defaultValue="" name="КоличФактич" nullable="0" physicalName="КоличФактич" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL66" populated="true" UUID="df85b47c-5b6a-4307-b5ea-eb4c32cf5581" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_КоличНедостачи_seq" defaultValue="" name="КоличНедостачи" nullable="0" physicalName="КоличНедостачи" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL67" populated="true" UUID="81ff0711-d6b6-411f-8e7a-4b6eedbf3a0c" autoIncrement="false" autoIncrementSequenceName="ТАБ_СписокНоменклИнвентОписи_КоличИзлишек_seq" defaultValue="" name="КоличИзлишек" nullable="0" physicalName="КоличИзлишек" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB593" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB592" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB594" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX68" populated="true" UUID="22f75cd6-0aa1-496b-81dd-db001fbcd0ca" clustered="false" name="ТАБ_СписокНоменклИнвентОписи_pk" physicalName="таб_списокноменклинвентописи_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC69" populated="true" UUID="e77dfcd3-e377-4850-a823-e95b6a7c4f1d" ascendingOrDescending="UNSPECIFIED" column-ref="COL60" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB70" populated="true" UUID="d6b0c4bb-e3a8-4cf5-b639-ec924f541cc2" name="СПР_ДолжностиСотрудника" objectType="TABLE" physicalName="СПР_ДолжностиСотрудника" >
+   <remarks></remarks>
+   <folder id="FOLTAB701" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL71" populated="true" UUID="c85e1faa-3fbe-47a9-81b4-2517a984633e" autoIncrement="true" autoIncrementSequenceName="СПР_ДолжностиСотрудника_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL72" populated="true" UUID="559ac802-1366-4f1a-b0f6-0ef2d27b4113" autoIncrement="false" autoIncrementSequenceName="СПР_ДолжностиСотрудника_Наименование_seq" defaultValue="" name="Наименование" nullable="0" physicalName="Наименование" precision="64" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB703" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB702" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB704" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX73" populated="true" UUID="5eabae98-751b-4b37-b4fc-61af13c354e6" clustered="false" name="СПР_ДолжностиСотрудника_pk" physicalName="спр_должностисотрудника_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC74" populated="true" UUID="11ebd307-99d3-46ac-8ddf-9a366f3b3fe5" ascendingOrDescending="UNSPECIFIED" column-ref="COL71" name="id" physicalName="id" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL75" populated="true" UUID="a22c7725-3b3e-4325-8765-ee947804bb7c" deferrability="7" deleteRule="3" fk-table-ref="TAB11" fkCardinality="7" identifying="false" name="ДОК_ПриказСоздИнвентКомис_ТАБ_СписокИнвентКомис_fk" physicalName="док_приказсоздинвенткомис_таб_списокинвенткомис_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP76" populated="true" UUID="6a86ecf4-33df-40b6-b5fb-57137fe47ed7" fk-column-ref="COL13" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL77" populated="true" UUID="69779c93-2871-4d8d-96bd-148b23807e0b" deferrability="7" deleteRule="3" fk-table-ref="TAB53" fkCardinality="7" identifying="true" name="ДОК_ПриказСоздИнвентКомис_ДОК_ИнвентОпись_fk" physicalName="док_приказсоздинвенткомис_док_инвентопись_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP78" populated="true" UUID="a96c147a-5b28-4e9e-bb72-86cffc4d7472" fk-column-ref="COL54" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL79" populated="true" UUID="4a7b2b81-772e-4b81-8962-ebebb1f4de8b" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="СпД_Номенклатура_ТаЧ_СписокНоменклатурыИнвентОписи_fk" physicalName="спд_номенклатура_тач_списокноменклатурыинвентописи_fk" pk-table-ref="TAB17" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP80" populated="true" UUID="ba5abfd4-608d-415d-9be0-08ac946b4474" fk-column-ref="COL62" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL18" />
+   </relationship>
+   <relationship id="REL81" populated="true" UUID="3ceb69eb-eca3-4b36-818a-18fd730d3a21" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="СпД_ЕдХранения_СпД_Номенклатура_fk" physicalName="спд_едхранения_спд_номенклатура_fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP82" populated="true" UUID="444fb05e-0e1d-40d6-84e9-2f744c17688d" fk-column-ref="COL20" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
+   </relationship>
+   <relationship id="REL83" populated="true" UUID="60895e91-e3cd-476c-9f80-dd41bdeda3ac" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="СпД_Производители_СпД_Номенклатура_fk" physicalName="спд_производители_спд_номенклатура_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP84" populated="true" UUID="5d8fa1db-2382-444a-aeef-85d440d9d888" fk-column-ref="COL21" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
+   </relationship>
+   <relationship id="REL85" populated="true" UUID="2c26ec6a-ddce-4cfc-80ba-a9bff410b2be" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="false" name="СпД_Сотрудники_ОпД_ПриказСоздИнвентКомис_fk" physicalName="спд_сотрудники_опд_приказсоздинвенткомис_fk" pk-table-ref="TAB35" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP86" populated="true" UUID="cf920b6e-2ec7-4129-9b73-751179bf1748" fk-column-ref="COL7" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL36" />
+   </relationship>
+   <relationship id="REL87" populated="true" UUID="0d70aeca-1446-4b8d-98bd-9990bf05ce18" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="false" name="СпД_Сотрудники_ОпД_ПриказСоздИнвентКомис_fk1" physicalName="спд_сотрудники_опд_приказсоздинвенткомис_fk1" pk-table-ref="TAB35" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP88" populated="true" UUID="db792fae-08d6-4801-8117-6eece6bca8bb" fk-column-ref="COL8" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL36" />
+   </relationship>
+   <relationship id="REL89" populated="true" UUID="b8f747a0-2697-47d4-8ceb-7ac8c1498dbe" deferrability="7" deleteRule="3" fk-table-ref="TAB11" fkCardinality="7" identifying="false" name="СпД_Сотрудники_ТаЧ_СписокИнвентКомис_fk" physicalName="спд_сотрудники_тач_списокинвенткомис_fk" pk-table-ref="TAB35" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP90" populated="true" UUID="371092bc-6395-47af-814c-a83f9194fa92" fk-column-ref="COL14" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL36" />
+   </relationship>
+   <relationship id="REL91" populated="true" UUID="b8239c95-55a7-49e3-921f-5a895d55eafb" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="false" name="СпД_МестаХранения_ОпД_ПриказСоздИнвентКомис_fk" physicalName="спд_местахранения_опд_приказсоздинвенткомис_fk" pk-table-ref="TAB43" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP92" populated="true" UUID="f9f707ee-7038-4ad4-9189-f42dbaec4697" fk-column-ref="COL6" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL44" />
+   </relationship>
+   <relationship id="REL93" populated="true" UUID="1e2a45b6-808f-42fa-b8ba-5399474674ee" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="6" identifying="false" name="СпД_МоиОрганизации_ОпД_ПриказСоздИнвентКомис_fk" physicalName="спд_моиорганизации_опд_приказсоздинвенткомис_fk" pk-table-ref="TAB48" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP94" populated="true" UUID="287e5059-fce9-477f-ba2d-dd70ce3a6798" fk-column-ref="COL5" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL49" />
+   </relationship>
+   <relationship id="REL95" populated="true" UUID="e073fe14-ae4f-42bf-a4b2-24a7208b1057" deferrability="7" deleteRule="3" fk-table-ref="TAB59" fkCardinality="7" identifying="false" name="ОпД_ИнвентОпись_ТаЧ_СписокНоменклатурыИнвентОписи_fk" physicalName="опд_инвентопись_тач_списокноменклатурыинвентописи_fk" pk-table-ref="TAB53" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP96" populated="true" UUID="111867f9-0e25-4785-b487-03edfb33541a" fk-column-ref="COL61" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL54" />
+   </relationship>
+   <relationship id="REL97" populated="true" UUID="3ce6915a-fe46-483c-8d9b-953b948508e4" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="false" name="СпД_ДолжностиСотрудника_СпД_Сотрудники_fk" physicalName="спд_должностисотрудника_спд_сотрудники_fk" pk-table-ref="TAB70" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP98" populated="true" UUID="e6181d82-50ae-4f8a-b435-66d204e1fa95" fk-column-ref="COL40" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL71" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.MySqlDDLGenerator" allow-connection="false"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="0.9999999999999994" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="20" y="93" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB11" x="673" y="199" bgColor="0xc8dccc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB17" x="998" y="138" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="763" y="298" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB30" x="774" y="374" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB35" x="382" y="420" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB43" x="402" y="339" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB48" x="413" y="263" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB53" x="442" y="29" bgColor="0xbfd6ff" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB59" x="657" y="20" bgColor="0xc8dccc" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB70" x="678" y="464" bgColor="0xfbdabb" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL75" pkConnection="0.2185430463576159" fkConnection="0.6933333333333334" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL81" pkConnection="0.4393939393939394" fkConnection="0.6153846153846154" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL83" pkConnection="0.4696969696969697" fkConnection="0.7606837606837606" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL85" pkConnection="0.2571428571428571" fkConnection="0.8344370860927153" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL87" pkConnection="0.25833333333333336" fkConnection="0.9466666666666667" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL93" pkConnection="0.4166666666666667" fkConnection="0.5960264900662252" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL91" pkConnection="0.4166666666666667" fkConnection="0.7019867549668874" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL95" pkConnection="0.37333333333333335" fkConnection="0.3333333333333333" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL97" pkConnection="0.43333333333333335" fkConnection="0.9166666666666666" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL89" pkConnection="0.23880597014925373" fkConnection="0.891566265060241" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL79" pkConnection="0.2571428571428571" fkConnection="0.42857142857142855" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL77" pkConnection="0.2185430463576159" fkConnection="0.5333333333333333" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="33"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>

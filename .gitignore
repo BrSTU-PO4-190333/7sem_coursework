@@ -1,1 +1,4 @@
 docker/
+
+# SQL Power Architect
+*.architect~
