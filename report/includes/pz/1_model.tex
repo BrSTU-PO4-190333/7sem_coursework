@@ -319,7 +319,7 @@
 
     \scriptsize
 
-    \caption{Словарь данных справочника <<сотрудники>>}
+    \caption{Словарь данных справочника <<Сотрудники>>}
 
     \label{table:CPR_Sotrydniki_tipi}
 
@@ -334,7 +334,7 @@
         2&Фамилия&Фамилия сотрудника&C32&\\ \hline
         3&Имя&Имя сотрудника&C32&\\ \hline
         4&Отчество&Отчество сотрудника&C32&\\ \hline
-        5&ДолжностиСотру дникаId&Должность сотрудника&N16&СПР\_ДолжностиСотру дника\\ \hline
+        5&ДолжностиСотру дникаId&Должность сотрудника&N16&СПР\_ДолжностиСотрудника\\ \hline
     \end{tabular}
 \end{table}
 
@@ -367,7 +367,7 @@
 
     \scriptsize
 
-    \caption{Словарь данных справочника <<Сотрудники>>}
+    \caption{Словарь данных справочника <<Должности сотрудника>>}
 
     \label{table:CPR_DoljnostiSotrydnika_tipi}
 
@@ -575,100 +575,223 @@
 % \end{figure}
 
 \newpage
-\subsubsection{Оперативный документ <<Инвентаризационная опись>>}
-
-Оперативный документ <<Инвентаризационная опись>>
-- документ, в котором отображаются результаты инвентаризации.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:OP_InvenOpis_tipi})
-и макета (рисунок~\ref{fig:OP_InvenOpis_maket}).
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=12cm]
-        {_docs/ОП_ИнвенОпис_типы.jpg}
-    \caption{Словарь данных документа <<Инвентаризационная опись>>}
-    \label{fig:OP_InvenOpis_tipi}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=14cm]
-        {_docs/ОП_ИнвенОпис_макет.jpg}
-    \caption{Макет документа <<Инвентаризационная опись>>}
-    \label{fig:OP_InvenOpis_maket}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[height=7cm]
-        {_docs/ОП_ИнвенОпис_связи.png}
-    \caption{Схема информационной связи документа <<Инвентаризационная опись>>}
-    \label{fig:OP_InvenOpis_svazi}
-\end{figure}
-
-\newpage
 \subsubsection{Оперативный документ <<Приказ о создании инвентаризационной комиссии>>}
 
 Оперативный документ <<Приказ о создании инвентаризационной комиссии>>
 - документ, который формируется перед инвентаризацией товара.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:OP_PrikazSozdKomInvest_tipi})
-и макета (рисунок~\ref{fig:OP_PrikazSozdKomInvest_maket}).
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:DOC_PrikazCozdInventKomis} и \ref{table:TAB_SpisokInventKomis}),
+макета (см.~рисунок~\ref{fig:DOC_PrilazSozdInventKomis})
+и схемы связей (см.~рисунок~\ref{ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis}).
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/ОП_ПриказСоздКомИнвент_типы.jpg}
+
+    \scriptsize
+
     \caption{Словарь данных документа <<Приказ о создании инвентаризационной комиссии>>}
-    \label{fig:OP_PrikazSozdKomInvest_tipi}
+
+    \label{table:DOC_PrikazCozdInventKomis}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Автоинкримент&C128&\\ \hline
+        2&Номер&Номер документа&N8&\\ \hline
+        3&Дата&Дата проведения&TIME&\\ \hline
+        4&МоиОрганизацииId&Организация&N16&СПР\_МоиОрганизации\\ \hline
+        5&МестаХраненияId&Место хранения&N16&СПР\_МестаХранения\\ \hline
+        6&СотрудникиId\_Пред седательКомиссии&Гланый в комиссии&N16&СПР\_Сотрудники\\ \hline
+        7&СотрудникиId\_Созда тельПриказа&Сотрудник создавший приказ&N16&СПР\_Сотрудники\\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+
+    \scriptsize
+
+    \caption{Словарь данных табличной части <<Список членов инвентаризационной комиссии>>}
+
+    \label{table:TAB_SpisokInventKomis}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&Автоинкримент&N16&\\ \hline
+        2&ПриказСоздИнвент КомисId&Код документа&C128&ДОК\_ПриказСоздИнвентКомис\\ \hline
+        3&СотрудникиId&Сотрудник&N16&СПР\_Сотрудники\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОП_ПриказСоздКомИнвент_типы.jpg}
+%     \caption{Словарь данных документа <<Приказ о создании инвентаризационной комиссии>>}
+%     \label{fig:OP_PrikazSozdKomInvest_tipi}
+% \end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=17cm]
+    {assets/layouts/DOC_PrilazSozdInventKomis.jpg}
+
+    \caption{Макет документа <<Приказ о создании инвентаризационной комиссии>>}
+
+    \label{fig:DOC_PrilazSozdInventKomis}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=14cm]
-        {_docs/ОП_ПриказСоздКомИнвент_макет.jpg}
-    \caption{Макет документа <<Приказ о создании инвентаризационной комиссии>>}
-    \label{fig:OP_PrikazSozdKomInvest_maket}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[height=5cm]
-        {_docs/ОП_ПриказСоздКомИнвент_связи.png}
+        {assets/ARIS/ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis.adf.pdf}
     \caption{Схема информационной связи документа <<Приказ о создании инвентаризационной комиссии>>}
-    \label{fig:OP_PrikazSozdKomInvest_svazi}
+    \label{fig:ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis}
 \end{figure}
 
 \newpage
-\subsubsection{Отчётный документ <<Акт о нестаче товара>>}
+
+\subsubsection{Оперативный документ <<Инвентаризационная опись>>}
+
+Оперативный документ <<Инвентаризационная опись>>
+- документ, в котором отображаются результаты инвентаризации.
+Документ представлен в виде словаря данных (см.~таблицу~\ref{table:DOC_InventOpis} и \ref{table:TAB_SpisokInventKomis}),
+макета (см.~рисунок~\ref{fig:DOC_InventOpis})
+и схемы связей (см.~рисунок~\ref{fig:ARIS_GeneralDiagram_DOC_InventOpis}).
+
+\begin{table}[h!]
+    \centering
+
+    \scriptsize
+
+    \caption{Словарь данных документа <<Инвентаризационная опись>>}
+
+    \label{table:DOC_InventOpis}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&UUID&C128&\\ \hline
+        2&Номер&Номер документа&N8&\\ \hline
+        3&Дата&Дата проведения&TIME&\\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+
+    \scriptsize
+
+    \caption{Словарь данных табличной части <<Список номенклатуры инвентаризационной описи>>}
+
+    \label{table:TAB_SpisokInventKomis}
+
+    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+        \hline
+        1&id&UUID&N16&\\ \hline
+        2&ИнвентОписьId&Код документа&C128&ДОК\_ИнвентОпись\\ \hline
+        3&НоменклатураId&Номенклатура&N16&СПР\_Номенклатура\\ \hline
+        4&Цена&Цена номенклатуры&F8&\\ \hline
+        5&КоличПоДаннымБух Учёта&Количество по данным бухгалтерского учёта&N8&\\ \hline
+        6&КоличФактич&Количество фактическое&N8&\\ \hline
+        7&КоличНедосдачи&Количество недосдачи&N8&\\ \hline
+        8&КоличИзлишек&Количество излишек&N8&\\ \hline
+    \end{tabular}
+\end{table}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=12cm]
+%         {_docs/ОП_ИнвенОпис_типы.jpg}
+%     \caption{Словарь данных документа <<Инвентаризационная опись>>}
+%     \label{fig:OP_InvenOpis_tipi}
+% \end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=17cm]
+    {assets/layouts/DOC_InventOpis'.jpg}
+
+    \caption{Макет документа <<Инвентаризационная опись>>}
+
+    \label{fig:DOC_InventOpis}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=11cm]
+    {assets/ARIS/ARIS_GeneralDiagram_DOC_InventOpis.adf.pdf}
+
+    \caption{Схема информационной связи документа <<Инвентаризационная опись>>}
+
+    \label{fig:ARIS_GeneralDiagram_DOC_InventOpis}
+\end{figure}
+
+\newpage
+\subsubsection{Отчётный документ <<Акт о нестачи товара>>}
 
 Отчётный документ <<Акт о нестаче товара>>
-- формируется после проведения инвентаризации.
-Документ представлен в виде словаря данных (рисунок~\ref{fig:OT_AktNedosTov_tipi})
-и макета (рисунок~\ref{fig:OT_AktNedosTov_maket}).
+- формируется после проведения инвентаризации (см.~рисунок~\ref{OTC_ActNedoctachiTovara}).
+Состоит отчёт из данных из двух документов:
+\begin{itemize}
+    \item <<Приказ о создании инвентаризационной комиссии>>;
+    \item <<Инвентаризационная опись>>.
+\end{itemize}
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/ОТ_АктНедосТов_типы.jpg}
-    \caption{Словарь данных документа <<Акт о нестаче товара>>}
-    \label{fig:OT_AktNedosTov_tipi}
+
+    \includegraphics[width=17cm]
+    {assets/layouts/OTC_ActNedoctachiTovara.jpg}
+
+    \caption{Макет документа <<Инвентаризационная опись>>}
+    
+    \label{fig:OTC_ActNedoctachiTovara}
 \end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=14cm]
-        {_docs/ОТ_АктНедосТов_макет.jpg}
-    \caption{Макет документа <<Акт о нестаче товара>>}
-    \label{fig:OT_AktNedosTov_maket}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОТ_АктНедосТов_типы.jpg}
+%     \caption{Словарь данных документа <<Акт о нестаче товара>>}
+%     \label{fig:OT_AktNedosTov_tipi}
+% \end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[height=6cm]
-        {_docs/ОТ_АктНедосТов_связи.png}
-    \caption{Схема информационной связи документа <<Акт о нестаче товара>>}
-    \label{fig:OP_AktNedosTov_svazi}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОТ_АктНедосТов_макет.jpg}
+%     \caption{Макет документа <<Акт о нестаче товара>>}
+%     \label{fig:OT_AktNedosTov_maket}
+% \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[height=6cm]
+%         {_docs/ОТ_АктНедосТов_связи.png}
+%     \caption{Схема информационной связи документа <<Акт о нестаче товара>>}
+%     \label{fig:OP_AktNedosTov_svazi}
+% \end{figure}
 
 \newpage
 \subsection{Модель бизнес-процесса объекта автоматизации}

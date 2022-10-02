@@ -22,6 +22,14 @@
 `-- report
     |-- assets
     |   |-- ARIS
+    |   |   |-- ARIS_BusinessProcess.adf
+    |   |   |-- ARIS_BusinessProcess.adf.pdf
+    |   |   |-- ARIS_BusinessProcessElements.adf
+    |   |   |-- ARIS_BusinessProcessElements.adf.pdf
+    |   |   |-- ARIS_GeneralDiagram_DOC_InventOpis.adf
+    |   |   |-- ARIS_GeneralDiagram_DOC_InventOpis.adf.pdf
+    |   |   |-- ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis.adf
+    |   |   |-- ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis.adf.pdf
     |   |   |-- ARIS_OrganizationalСhart.adf
     |   |   |-- ARIS_OrganizationalСhart.adf.pdf
     |   |   |-- ARIS_ProcessLandscape.adf
@@ -56,6 +64,13 @@
     |   |   |-- DOC_InventOpis'.ods
     |   |   |-- DOC_PrilazSozdInventKomis.jpg
     |   |   `-- DOC_PrilazSozdInventKomis.ods
+    |   |-- layouts
+    |   |   |-- DOC_InventOpis'.jpg
+    |   |   |-- DOC_InventOpis'.ods
+    |   |   |-- DOC_PrilazSozdInventKomis.jpg
+    |   |   |-- DOC_PrilazSozdInventKomis.ods
+    |   |   |-- OTC_ActNedoctachiTovara.jpg
+    |   |   `-- OTC_ActNedoctachiTovara.ods
     |   `-- sql
     |       |-- CPR_DolzhnostiSotrudnika.png
     |       |-- CPR_DolzhnostiSotrudnika.sql
@@ -78,83 +93,6 @@
     |       |-- SQL_Insert.sql
     |       |-- TAB_SpisokInventKomis.png
     |       `-- TAB_SpisokNomenklInventOpisi.png
-    |-- _docs
-    |   |-- .gitignore
-    |   |-- README.md
-    |   |-- КМ.adf
-    |   |-- КМ.png
-    |   |-- ЛКМ_ИнвенОпис.adf
-    |   |-- ЛКМ_ИнвенОпис.png
-    |   |-- ЛКМ_ПриказСоздКомИнвент.adf
-    |   |-- ЛКМ_ПриказСоздКомИнвент.png
-    |   |-- ЛМ.erwin
-    |   |-- ЛМ.png
-    |   |-- МБП_Activity.adf
-    |   |-- МБП_Activity.png
-    |   |-- МБП.adf
-    |   |-- МБП_Document.adf
-    |   |-- МБП_Document.png
-    |   |-- МБП_Entity.adf
-    |   |-- МБП_Entity.png
-    |   |-- МБП_Event.adf
-    |   |-- МБП_Event.png
-    |   |-- МБП_Location.adf
-    |   |-- МБП_Location.png
-    |   |-- МБП.png
-    |   |-- МБП_Product.adf
-    |   |-- МБП_Product.png
-    |   |-- ОП_ИнвенОпис_макет.jpg
-    |   |-- ОП_ИнвенОпис_макет.ods
-    |   |-- ОП_ИнвенОпис_связи.adf
-    |   |-- ОП_ИнвенОпис_связи.png
-    |   |-- ОП_ИнвенОпис_типы.jpg
-    |   |-- ОП_ИнвенОпис_типы.ods
-    |   |-- ОП_каталог.jpg
-    |   |-- ОП_каталог.ods
-    |   |-- ОП_ПриказСоздКомИнвент_макет.jpg
-    |   |-- ОП_ПриказСоздКомИнвент_макет.ods
-    |   |-- ОП_ПриказСоздКомИнвент_связи.adf
-    |   |-- ОП_ПриказСоздКомИнвент_связи.png
-    |   |-- ОП_ПриказСоздКомИнвент_типы.jpg
-    |   |-- ОП_ПриказСоздКомИнвент_типы.ods
-    |   |-- ОТ_АктНедосТов_макет.jpg
-    |   |-- ОТ_АктНедосТов_макет.ods
-    |   |-- ОТ_АктНедосТов_связи.adf
-    |   |-- ОТ_АктНедосТов_связи.png
-    |   |-- ОТ_АктНедосТов_типы.jpg
-    |   |-- ОТ_АктНедосТов_типы.ods
-    |   |-- ОТ_каталог.jpg
-    |   |-- ОТ_каталог.ods
-    |   |-- СП_ДолжнСотр_макет.jpg
-    |   |-- СП_ДолжнСотр_макет.ods
-    |   |-- СП_ДолжнСотр_типы.jpg
-    |   |-- СП_ДолжнСотр_типы.ods
-    |   |-- СП_ЕдХран_макет.jpg
-    |   |-- СП_ЕдХран_макет.ods
-    |   |-- СП_ЕдХран_типы.jpg
-    |   |-- СП_ЕдХран_типы.ods
-    |   |-- СП_каталог.jpg
-    |   |-- СП_каталог.ods
-    |   |-- СП_МестаХран_макет.jpg
-    |   |-- СП_МестаХран_макет.ods
-    |   |-- СП_МестаХран_типы.jpg
-    |   |-- СП_МестаХран_типы.ods
-    |   |-- СП_МоиОрг_макет.jpg
-    |   |-- СП_МоиОрг_макет.ods
-    |   |-- СП_МоиОрг_типы.jpg
-    |   |-- СП_МоиОрг_типы.ods
-    |   |-- СП_Номенкл_макет.jpg
-    |   |-- СП_Номенкл_макет.ods
-    |   |-- СП_Номенкл_типы.jpg
-    |   |-- СП_Номенкл_типы.ods
-    |   |-- СП_Произв_макет.jpg
-    |   |-- СП_Произв_макет.ods
-    |   |-- СП_Произв_типы.jpg
-    |   |-- СП_Произв_типы.ods
-    |   |-- СП_Сотр_макет.jpg
-    |   |-- СП_Сотр_макет.ods
-    |   |-- СП_Сотр_типы.jpg
-    |   `-- СП_Сотр_типы.ods
     |-- env
     |   |-- coursework.sty
     |   `-- global.sty
@@ -193,4 +131,4 @@
         |-- table.sty
         `-- url.sty
 
-15 directories, 178 files
+15 directories, 116 files
