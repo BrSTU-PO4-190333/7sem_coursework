@@ -20,20 +20,12 @@
 |-- README.md
 |-- README.tree.txt
 `-- report
-    |-- _assets
-    |   |-- КомИнвент.png
-    |   |-- ОП_ИнвенОпис.png
-    |   |-- ОП_ПриказСоздКомИнвент.png
-    |   |-- СП_ДолжСотр.png
-    |   |-- СП_ЕдХран.png
-    |   |-- СП_МестаХран.png
-    |   |-- СП_МоиОрг.png
-    |   |-- СП_Номенкл.png
-    |   |-- СП_Произв.png
-    |   |-- СП_Сотр.png
-    |   |-- ТабличнаяЧасть_Номенкл.png
-    |   `-- ТабличнаяЧасть_СоставКомис.png
     |-- assets
+    |   |-- ARIS
+    |   |   |-- ARIS_OrganizationalСhart.adf
+    |   |   |-- ARIS_OrganizationalСhart.adf.pdf
+    |   |   |-- ARIS_ProcessLandscape.adf
+    |   |   `-- ARIS_ProcessLandscape.adf.pdf
     |   |-- database
     |   |   |-- ArchitectureDatabase.architect
     |   |   |-- ArchitectureDatabase.architect.pdf
@@ -45,25 +37,47 @@
     |   |   |-- DataModel_DOC_PrikazCozdInventKom.adf.pdf
     |   |   |-- SQL_CreateTable.sql
     |   |   `-- SQL_DropTable.sql
-    |   `-- etalons
-    |       |-- CPR_DolzhnostiSotrudnika.jpg
-    |       |-- CPR_DolzhnostiSotrudnika.ods
-    |       |-- CPR_EdinicyHraneniay.jpg
-    |       |-- CPR_EdinicyHraneniay.ods
-    |       |-- CPR_MestaHraneniay.jpg
-    |       |-- CPR_MestaHraneniay.ods
-    |       |-- CPR_MoiOrganizacii.jpg
-    |       |-- CPR_MoiOrganizacii.ods
-    |       |-- CPR_Nomenklatura.jpg
-    |       |-- CPR_Nomenklatura.ods
-    |       |-- CPR_Proizvoditeli.jpg
-    |       |-- CPR_Proizvoditeli.ods
-    |       |-- CPR_Sotrudniki.jpg
-    |       |-- CPR_Sotrudniki.ods
-    |       |-- DOC_InventarizationnayOpis'.jpg
-    |       |-- DOC_InventarizationnayOpis'.ods
-    |       |-- DOC_PrilazSozdaniiInventarizationnojKomissii.jpg
-    |       `-- DOC_PrilazSozdaniiInventarizationnojKomissii.ods
+    |   |-- etalons
+    |   |   |-- CPR_DolzhnostiSotrudnika.jpg
+    |   |   |-- CPR_DolzhnostiSotrudnika.ods
+    |   |   |-- CPR_EdinicyHraneniay.jpg
+    |   |   |-- CPR_EdinicyHraneniay.ods
+    |   |   |-- CPR_MestaHraneniay.jpg
+    |   |   |-- CPR_MestaHraneniay.ods
+    |   |   |-- CPR_MoiOrganizacii.jpg
+    |   |   |-- CPR_MoiOrganizacii.ods
+    |   |   |-- CPR_Nomenklatura.jpg
+    |   |   |-- CPR_Nomenklatura.ods
+    |   |   |-- CPR_Proizvoditeli.jpg
+    |   |   |-- CPR_Proizvoditeli.ods
+    |   |   |-- CPR_Sotrudniki.jpg
+    |   |   |-- CPR_Sotrudniki.ods
+    |   |   |-- DOC_InventOpis'.jpg
+    |   |   |-- DOC_InventOpis'.ods
+    |   |   |-- DOC_PrilazSozdInventKomis.jpg
+    |   |   `-- DOC_PrilazSozdInventKomis.ods
+    |   `-- sql
+    |       |-- CPR_DolzhnostiSotrudnika.png
+    |       |-- CPR_DolzhnostiSotrudnika.sql
+    |       |-- CPR_EdinicyHraneniay.png
+    |       |-- CPR_EdinicyHraneniay.sql
+    |       |-- CPR_MestaHraneniay.png
+    |       |-- CPR_MestaHraneniay.sql
+    |       |-- CPR_MoiOrganizacii.png
+    |       |-- CPR_MoiOrganizacii.sql
+    |       |-- CPR_Nomenklatura.png
+    |       |-- CPR_Nomenklatura.sql
+    |       |-- CPR_Proizvoditeli.png
+    |       |-- CPR_Proizvoditeli.sql
+    |       |-- CPR_Sotrudniki.png
+    |       |-- CPR_Sotrudniki.sql
+    |       |-- DOC_InventOpis'.png
+    |       |-- DOC_InventOpis'.sql
+    |       |-- DOC_PrilazSozdInventKomis.png
+    |       |-- DOC_PrilazSozdInventKomis.sql
+    |       |-- SQL_Insert.sql
+    |       |-- TAB_SpisokInventKomis.png
+    |       `-- TAB_SpisokNomenklInventOpisi.png
     |-- _docs
     |   |-- .gitignore
     |   |-- README.md
@@ -103,10 +117,6 @@
     |   |-- ОП_ПриказСоздКомИнвент_связи.png
     |   |-- ОП_ПриказСоздКомИнвент_типы.jpg
     |   |-- ОП_ПриказСоздКомИнвент_типы.ods
-    |   |-- ОрганизационнаяМодель.adf
-    |   |-- ОрганизационнаяМодель.png
-    |   |-- ОрганизационныеЕдиницы_каталог.jpg
-    |   |-- ОрганизационныеЕдиницы_каталог.ods
     |   |-- ОТ_АктНедосТов_макет.jpg
     |   |-- ОТ_АктНедосТов_макет.ods
     |   |-- ОТ_АктНедосТов_связи.adf
@@ -144,11 +154,7 @@
     |   |-- СП_Сотр_макет.jpg
     |   |-- СП_Сотр_макет.ods
     |   |-- СП_Сотр_типы.jpg
-    |   |-- СП_Сотр_типы.ods
-    |   |-- Функции_каталог.jpg
-    |   |-- Функции_каталог.ods
-    |   |-- ФункциональнаяМодель.adf
-    |   `-- ФункциональнаяМодель.png
+    |   `-- СП_Сотр_типы.ods
     |-- env
     |   |-- coursework.sty
     |   `-- global.sty
@@ -178,10 +184,6 @@
     |-- main_4_prilB.tex
     |-- main.tex
     |-- Makefile
-    |-- src
-    |   |-- create_database.sql
-    |   |-- create.sql
-    |   `-- delete_database.sql
     `-- styles
         |-- listing.sty
         |-- list.sty
@@ -190,4 +192,4 @@
         |-- table.sty
         `-- url.sty
 
-15 directories, 175 files
+15 directories, 177 files

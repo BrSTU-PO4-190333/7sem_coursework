@@ -1,7 +1,7 @@
 \section{ОПИСАНИЕ МОДЕЛИ ОБЪЕКТА АВТОМАТИЗАЦИИ}
 \subsection{Организационная модель}
 
-Организационная структура - совокупность подразделений организации и их взаимосвязей,
+\textbf{Организационная структура} - совокупность подразделений организации и их взаимосвязей,
 в рамках которой между подразделениями распределяются функциональные задачи,
 определяются полномочия и ответственность руководителей и должностных лиц.
 
@@ -12,28 +12,55 @@
 Оргструктура представляется через органограмму и такие документы, как штатное расписание,
 устав организации и пр.
 
-Органограмма - графическое представление структуры организации.
+\textbf{Органограмма} - графическое представление структуры организации.
 
 Организационная модель ОА <<Косметический салон>> представлена органограммой <<Косметический салон>>
-на рис.~\ref{fig:OrganizationnayModel}
+(см.~рисунок~\ref{fig:ARIS_OrganizationalСhart})
 с использованием нотации Organizational chart методологии ARIS,
 а также таблицей <<Каталог организационных единиц>>
-на рис.~\ref{fig:OrganizationnieEdinici_katalog}.
+(см.~таблицу~\ref{table:ARIS_OrganizationalСhart}).
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[height=6cm]
-        {_docs/ОрганизационнаяМодель.png}
-    \caption{Органограмма ОА <<Косметический салон>>}
-    \label{fig:OrganizationnayModel}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОрганизационныеЕдиницы_каталог.jpg}
+%     \caption{Каталог организационых единиц}
+%     \label{fig:OrganizationnieEdinici_katalog}
+% \end{figure}
 
-\begin{figure}[!h]
+\begin{table}[h!]
     \centering
-    \includegraphics[width=14cm]
-        {_docs/ОрганизационныеЕдиницы_каталог.jpg}
+
+    \footnotesize
+
     \caption{Каталог организационых единиц}
-    \label{fig:OrganizationnieEdinici_katalog}
+
+    \label{table:ARIS_OrganizationalСhart}
+
+    \begin{tabular}{|M{1cm}|M{4cm}|M{10cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Наименование организационной единицы}&\textbf{Расшифровка}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|p{1cm}|p{4cm}|p{10cm}|} 
+        \hline
+        1       &Косметический салон    &Организация по реализации услуг\\ \hline
+        1.1     &Начальство             &Группа сотрудников, которые управляют организацией\\ \hline
+        1.1.1   &Владелец               &Может быть председателем комиссии\\ \hline
+        1.1.2   &Администратор          &Может быть председателем, так и членом инвентаризационной комиссии\\ \hline
+        1.2     &Мастера                &Группа сотрудников, которые подчиняются начальству\\ \hline
+        1.2.1   &Парикхмахер            &Может быть членом инвентаризационной комиссии\\ \hline
+        1.2.2   &Масажист               &Может быть членом инвентаризационной комиссии\\ \hline
+        1.2.3   &Визажист               &Может быть членом инвентаризационной комиссии\\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=23cm, angle=90]
+        {assets/ARIS/ARIS_OrganizationalСhart.adf.pdf}
+    \caption{Органограмма ОА <<Косметический салон>>}
+    \label{fig:ARIS_OrganizationalСhart}
 \end{figure}
 
 \newpage
@@ -51,25 +78,74 @@
 которые потом детализируются через свои функциональные составляющие.
 
 Функциональная модель ОА <<Косметический салон>> представлена
-на рис.~\ref{fig:FynctionalnayModel}
-с использованием нотации Process landscape методологии ARIS,
+с использованием нотации Process landscape методологии ARIS
+(см.~рисунок~\ref{fig:ARIS_ProcessLandscape}),
 а также таблицей <<Каталог функций>>
-на рис.~\ref{fig:Fynctii_katalog}.
+(см.~таблицу~\ref{table:ARIS_ProcessLandscape}).
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[height=8cm]
-        {_docs/ФункциональнаяМодель.png}
-    \caption{Функциональное дерево ОА "Косметический салон"}
-    \label{fig:FynctionalnayModel}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[height=8cm]
+%         {_docs/ФункциональнаяМодель.png}
+%     \caption{Функциональное дерево ОА "Косметический салон"}
+%     \label{fig:FynctionalnayModel}
+% \end{figure}
 
-\begin{figure}[!h]
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=12cm]
+%         {_docs/Функции_каталог.jpg}
+%     \caption{Каталог функций}
+%     \label{fig:Fynctii_katalog}
+% \end{figure}
+
+\begin{table}[h!]
     \centering
-    \includegraphics[width=12cm]
-        {_docs/Функции_каталог.jpg}
+
+    \scriptsize
+
     \caption{Каталог функций}
-    \label{fig:Fynctii_katalog}
+
+    \label{table:ARIS_ProcessLandscape}
+
+    \begin{tabular}{|M{1.2cm}|M{4cm}|M{4cm}|M{7cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Наименование функции}&\textbf{Организационны элемент}&\textbf{Документ}\\ \hline
+    \end{tabular}
+
+    \begin{tabular}{|p{1.2cm}|M{4cm}|p{4cm}|M{7cm}|} 
+        \hline
+
+        1       &Деятельность ОА                        &Начальство, мастера&
+        СПР\_ДолжностиСотрудника,
+        СПР\_МоиОрганизации,
+        СПР\_Сотрудники
+        \\ \hline
+
+        1.1     &Управление потоком материалов          &Начальство         &
+        СПР\_Производители,
+        СПР\_ЕдиницыХранения,
+        СПР\_Номенклатура
+        \\ \hline
+
+        1.1.1   &Инвентаризация                         &Начальство, мастера&\\ \hline
+        1.1.1.1 &Создание инвентаризационной комиссии   &Начальство, мастера&
+        СПР\_МестаХранения,
+        ДОК\_ПриказСоздИнвентКомис\\ \hline
+        1.1.1.2 &Проведение инвентаризации              &Начальство, мастера&ДОК\_ИнвентОпись\\ \hline
+        1.1.1.3 &Выдача отчёта инвентаризации           &Начальство, мастера&ОТЧ\_АктНедостТов\\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=8cm, angle=90]
+    {assets/ARIS/ARIS_ProcessLandscape.adf.pdf}
+
+    \caption{Функциональное дерево ОА "Косметический салон"}
+
+    \label{fig:ARIS_ProcessLandscape}
 \end{figure}
 
 \newpage
