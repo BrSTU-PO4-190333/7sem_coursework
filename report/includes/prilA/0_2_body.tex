@@ -1,44 +1,10 @@
+\listoffigures % Список картинок и их страницы
+\newpage
+
 \ESKDstyle{title}
 \thispagestyle{plain}
 \pagestyle{plain}
 \hspace{0pt}
-
-В данном приложении приведены эталоны документов,
-являющиеся тестовым набором данных для проверки разработанной базы данных:
-
-\begin{itemize}
-    \item эталон справочника <<Номенклатура>> (см.~рисунок~\ref{fig:CPR_Nomenklatura});
-    \item эталон справочника <<Сотрудники>> (см.~рисунок~\ref{fig:CPR_Sotrudniki});
-    \item эталон справочника <<Должности сотрудника>> (см.~рисунок~\ref{fig:CPR_DolzhnostiSotrudnika});
-    \item эталон справочника <<Единицы хранеия>> (см.~рисунок~\ref{fig:CPR_EdinicyHraneniay});
-    \item эталон справочника <<Мои организации>> (см.~рисунок~\ref{fig:CPR_MoiOrganizacii});
-    \item эталон справочника <<Производители>> (см.~рисунок~\ref{fig:CPR_Proizvoditeli});
-    \item эталон справочника <<Места хранения>> (см.~рисунок~\ref{fig:CPR_MestaHraneniay});
-    \item эталон документа <<Приказ о создании инвентаризационной комиссии>> (см.~рисунок~\ref{fig:DOC_PrilazSozdaniiInventarizationnojKomissii});
-    \item эталон документа <<Инвентаризационная опись>> (см.~рисунок~\ref{fig:DOC_InventarizationnayOpis}).
-\end{itemize}
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=17cm]
-    {assets/etalons/CPR_Nomenklatura.jpg}
-
-    \caption{Эталон справочника <<Номенклатура>>}
-
-    \label{fig:CPR_Nomenklatura}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[]
-    {assets/etalons/CPR_Sotrudniki.jpg}
-
-    \caption{Эталон справочника <<Сотрудники>>}
-
-    \label{fig:CPR_Sotrudniki}
-\end{figure}
 
 \begin{figure}[!h]
     \centering
@@ -46,7 +12,7 @@
     \includegraphics[]
     {assets/etalons/CPR_DolzhnostiSotrudnika.jpg}
 
-    \caption{Эталон справочника <<Должности сотрудника>>}
+    \caption{СПР\_ДолжностиСотрудника}
 
     \label{fig:CPR_DolzhnostiSotrudnika}
 
@@ -56,20 +22,9 @@
     \centering
 
     \includegraphics[]
-    {assets/etalons/CPR_EdinicyHraneniay.jpg}
-
-    \caption{Эталон справочника <<Единицы хранения>>}
-
-    \label{fig:CPR_EdinicyHraneniay}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[]
     {assets/etalons/CPR_MoiOrganizacii.jpg}
 
-    \caption{Эталон справочника <<Мои организации>>}
+    \caption{СПР\_МоиОрганизации}
 
     \label{fig:CPR_MoiOrganizacii}
 \end{figure}
@@ -78,9 +33,20 @@
     \centering
 
     \includegraphics[]
+    {assets/etalons/CPR_MestaHraneniay.jpg}
+
+    \caption{СПР\_МестаХранения}
+    
+    \label{fig:CPR_MestaHraneniay}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[]
     {assets/etalons/CPR_Proizvoditeli.jpg}
 
-    \caption{Эталон справочника <<Производитель>>}
+    \caption{СПР\_Производители}
 
     \label{fig:CPR_Proizvoditeli}
 \end{figure}
@@ -89,31 +55,53 @@
     \centering
 
     \includegraphics[]
-    {assets/etalons/CPR_MestaHraneniay.jpg}
+    {assets/etalons/CPR_EdinicyHraneniay.jpg}
 
-    \caption{Эталон справочника <<Места хранения>>}
-    
-    \label{fig:CPR_MestaHraneniay}
+    \caption{СПР\_ЕдиницыХранения}
+
+    \label{fig:CPR_EdinicyHraneniay}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[]
+    {assets/etalons/CPR_Sotrudniki.jpg}
+
+    \caption{СПР\_Сотрудники}
+
+    \label{fig:CPR_Sotrudniki}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=17cm]
+    {assets/etalons/CPR_Nomenklatura.jpg}
+
+    \caption{СПР\_Номенклатура}
+
+    \label{fig:CPR_Nomenklatura}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
 
     \includegraphics[width=18cm]
-    {assets/etalons/DOC_PrilazSozdaniiInventarizationnojKomissii.jpg}
+    {assets/etalons/DOC_PrilazSozdInventKomis.jpg}
 
-    \caption{Эталон оперативного документа <<Приказ о создании инвентаризационной комиссии>>}
+    \caption{ДОК\_ПриказСоздИнвентКомис}
 
-    \label{fig:DOC_PrilazSozdaniiInventarizationnojKomissii}
+    \label{fig:DOC_PrilazSozdInventKomis}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
 
     \includegraphics[width=18cm]
-    {assets/etalons/DOC_InventarizationnayOpis'.jpg}
+    {assets/etalons/DOC_InventOpis'.jpg}
 
-    \caption{Эталон оперативного документа <<Инвентаризационная опись>>}
+    \caption{ДОК\_ИнвентОпись}
 
-    \label{fig:DOC_InventarizationnayOpis}
+    \label{fig:DOC_InventOpis}
 \end{figure}
