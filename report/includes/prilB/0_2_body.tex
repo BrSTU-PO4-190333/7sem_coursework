@@ -1,119 +1,159 @@
+\lstlistoflistings % Список листингов и их страницы
+\listoffigures % Список картинок и их страницы
+\newpage
+
 \ESKDstyle{title}
 \thispagestyle{plain}
 \pagestyle{plain}
 \hspace{0pt}
 
-Таблицы в базе данных:
-\begin{itemize}
-    \item \textbf{СП\_ЕдХран} - см. рис.~\ref{fig:CP_EdXran}
-    \item \textbf{СП\_Произв} - см. рис.~\ref{fig:CP_Proizv}
-    \item \textbf{СП\_МоиОрг} - см. рис.~\ref{fig:CP_MoiOrg}
-    \item \textbf{СП\_ДолжСотр} - см. рис.~\ref{fig:CP_DoljSotr}
-    \item \textbf{СП\_Сотр} - см. рис.~\ref{fig:CP_Sotr}
-    \item \textbf{СП\_МестаХран} - см. рис.~\ref{fig:CP_MestaXran}
-    \item \textbf{СП\_Номенкл} - см. рис.~\ref{fig:CP_Nomencl}
-    \item \textbf{КомИнвент} - см. рис.~\ref{fig:CP_KomInvent}
-    \item \textbf{ТабличнаяЧасть\_СоставКомис} - см. рис.~\ref{fig:TablichnajaChast_SostavKomissii}
-    \item \textbf{ОП\_ИнвенОпис} - см. рис.~\ref{fig:OP_InvenOpis}
-    \item \textbf{ОП\_ПриказСоздКомИнвент} - см. рис.~\ref{fig:OP_PrikazSozdKomInvent}
-    \item \textbf{ТабличнаяЧасть\_Номенкл} - см. рис.~\ref{fig:TablichnajaChast_Nomencl}
-\end{itemize}
+\lstinputlisting[language=sql, caption=СПР\_ДолжностиСотрудника]
+{assets/sql/CPR_DolzhnostiSotrudnika.sql}
 
-\lstinputlisting[language=sql]
-    {src/create.sql}
+\lstinputlisting[language=sql, caption=СПР\_МоиОрганизации]
+{assets/sql/CPR_MoiOrganizacii.sql}
+
+\lstinputlisting[language=sql, caption=СПР\_МестаХранения]
+{assets/sql/CPR_MestaHraneniay.sql}
+
+\lstinputlisting[language=sql, caption=СПР\_Производители]
+{assets/sql/CPR_Proizvoditeli.sql}
+
+\lstinputlisting[language=sql, caption=СПР\_ЕдиницыХранения]
+{assets/sql/CPR_EdinicyHraneniay.sql}
+
+\lstinputlisting[language=sql, caption=СПР\_Сотрудники]
+{assets/sql/CPR_Sotrudniki.sql}
+
+\lstinputlisting[language=sql, caption=СПР\_Номенклатура]
+{assets/sql/CPR_Nomenklatura.sql}
+
+\lstinputlisting[language=sql, caption=ДОК\_ПриказСоздИнвентКомис и ТАБ\_СписокИнвентКомис]
+{assets/sql/DOC_PrilazSozdInventKomis.sql}
+
+\lstinputlisting[language=sql, caption=ДОК\_ИнвентОпись и ТАБ\_СписокНоменклИнвентОписи]
+{assets/sql/DOC_InventOpis'.sql}
+
+\newpage
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=12cm]
-        {_assets/СП_ЕдХран.png}
-    \caption{Таблица справочного документа <<Единицы хранения>> в БД}
-    \label{fig:CP_EdXran}
+    {assets/sql/CPR_DolzhnostiSotrudnika.png}
+
+    \caption{СПР\_ДолжностиСотрудника}
+
+    \label{fig:CPR_DolzhnostiSotrudnika}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=12cm]
-        {_assets/СП_Произв.png}
-    \caption{Таблица справочного документа <<Производители>> в БД}
-    \label{fig:CP_Proizv}
+    {assets/sql/CPR_MoiOrganizacii.png}
+
+    \caption{СПР\_МоиОрганизации}
+
+    \label{fig:CPR_MoiOrganizacii}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=12cm]
-        {_assets/СП_МоиОрг.png}
-    \caption{Таблица справочного документа <<Мои организации>> в БД}
-    \label{fig:CP_MoiOrg}
+    {assets/sql/CPR_MestaHraneniay.png}
+
+    \caption{СПР\_МестаХранения}
+
+    \label{fig:CPR_MestaHraneniay}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=12cm]
-        {_assets/СП_ДолжСотр.png}
-    \caption{Таблица справочного документа <<Должности сотрудника>> в БД}
-    \label{fig:CP_DoljSotr}
+    {assets/sql/CPR_Proizvoditeli.png}
+
+    \caption{СПР\_Производители}
+    
+    \label{fig:CPR_Proizvoditeli}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=12cm]
-        {_assets/СП_Сотр.png}
-    \caption{Таблица справочного документа <<Сотрудники>> в БД}
-    \label{fig:CP_Sotr}
+    {assets/sql/CPR_EdinicyHraneniay.png}
+
+    \caption{СПР\_ЕдиницыХранения}
+    
+    \label{fig:CPR_EdinicyHraneniay}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=12cm]
-        {_assets/СП_МестаХран.png}
-    \caption{Таблица справочного документа <<Места хранения>> в БД}
-    \label{fig:CP_MestaXran}
+    {assets/sql/CPR_Sotrudniki.png}
+
+    \caption{СПР\_Сотрудники}
+
+    \label{fig:CPR_Sotrudniki}
 \end{figure}
+
 
 \begin{figure}[!h]
     \centering
+
     \includegraphics[width=18cm]
-        {_assets/СП_Номенкл.png}
-    \caption{Таблица справочного документа <<Номенклатура>> в БД}
-    \label{fig:CP_Nomencl}
+    {assets/sql/CPR_Nomenklatura.png}
+
+    \caption{СПР\_Номенклатура}
+
+    \label{fig:CPR_Nomenklatura}
 \end{figure}
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=12cm]
-        {_assets/КомИнвент.png}
-    \caption{Таблица <<Коммисия инвентаризационная>> в БД}
-    \label{fig:CP_KomInvent}
-\end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=12cm]
-        {_assets/ТабличнаяЧасть_СоставКомис.png}
-    \caption{Таблица <<Табличная часть - Состав комиcсии>> в БД}
-    \label{fig:TablichnajaChast_SostavKomissii}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=12cm]
-        {_assets/ОП_ИнвенОпис.png}
-    \caption{Таблица оперативного документа <<Инвентаризационная опись>> в БД}
-    \label{fig:OP_InvenOpis}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=12cm]
-        {_assets/ОП_ПриказСоздКомИнвент.png}
-    \caption{Таблица оперативного документа <<Приказ о создании комиссиии инвентаризационной>> в БД}
-    \label{fig:OP_PrikazSozdKomInvent}
-\end{figure}
-
-\begin{figure}[!h]
-    \centering
     \includegraphics[width=18cm]
-        {_assets/ТабличнаяЧасть_Номенкл.png}
-    \caption{Таблица <<Табличная часть - Номенклатура>> в БД}
-    \label{fig:TablichnajaChast_Nomencl}
+    {assets/sql/DOC_PrilazSozdInventKomis.png}
+
+    \caption{ДОК\_ПриказСоздИнвентКомис}
+
+    \label{fig:DOC_PrilazSozdInventKomis}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/sql/TAB_SpisokInventKomis.png}
+
+    \caption{ТАБ\_СписокИнвентКомис}
+
+    \label{fig:TAB_SpisokInventKomis}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/sql/DOC_InventOpis'.png}
+
+    \caption{ДОК\_ИнвентОпись}
+
+    \label{fig:DOC_InventOpis}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/sql/TAB_SpisokNomenklInventOpisi.png}
+
+    \caption{ТАБ\_СписокНоменклИнвентОписи}
+
+    \label{fig:TAB_SpisokNomenklInventOpisi}
 \end{figure}

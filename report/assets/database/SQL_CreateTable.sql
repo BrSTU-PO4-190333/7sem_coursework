@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS СПР_Номенклатура (
 
 CREATE TABLE IF NOT EXISTS ДОК_ПриказСоздИнвентКомис (
                 id VARCHAR(128) NOT NULL,
-                Дата DATE NOT NULL,
+                Дата TIME NOT NULL,
                 Номер INT NOT NULL,
                 МоиОрганизацииId INT NOT NULL,
                 МестаХраненияId INT NOT NULL,
@@ -68,8 +68,8 @@ CREATE TABLE IF NOT EXISTS ДОК_ПриказСоздИнвентКомис (
 
 CREATE TABLE IF NOT EXISTS ДОК_ИнвентОпись (
                 id VARCHAR(128) NOT NULL,
+                Дата TIME NOT NULL,
                 Номер INT NOT NULL,
-                Дата DATE NOT NULL,
                 PRIMARY KEY (id)
 );
 

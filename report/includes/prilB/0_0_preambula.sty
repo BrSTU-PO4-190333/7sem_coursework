@@ -6,6 +6,7 @@
 \usepackage{styles/table_of_content}
 \usepackage{styles/table}
 \usepackage{styles/url}
+\usepackage{styles/list}
 
 \ESKDletter{}{К}{П}
 \def \envDocType {91}
@@ -13,7 +14,7 @@
 \def \envDocumentTopic {РЕЗУЛЬТАТЫ СОЗДАНИЯ, ЗАГРУЗКИ И ПРОВЕРКИ БД}
 
 \ESKDletter{}{К}{Р}
-\ESKDcolumnI {\ESKDfontIII \envTopic \\ \envDocumentTopic} % наименование изделия/документа
+\ESKDcolumnI {\ESKDfontII \envTopic \\ \envDocumentTopic} % наименование изделия/документа
 \ESKDsignature {\envCode} % обозначение документа
 \ESKDcolumnIX {\envDepartment} % наименование или различительный индекс предприятия
 \ESKDcolumnXIfI {\envStudentSurname} % Разраб.
@@ -31,5 +32,6 @@
     \fancyfoot{}                                % Очистить нижний колонтитул
 }
 
-\def \envPrilLetter {Б} % буква приложения в тиьульнике
+\def \envPrilLetter {Б} % буква приложения в титульнике
 \renewcommand {\thefigure} {\envPrilLetter.\arabic{figure}} % Рисунок Буква.1
+\AtBeginDocument{\renewcommand*{\thelstlisting}{\envPrilLetter.\arabic{lstlisting}}} % Листинг Буква.1
