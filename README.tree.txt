@@ -179,7 +179,8 @@
     |       |-- e_2_abbreviations.tex
     |       `-- e_3_literature.tex
     |-- main_1_PZ.tex
-    |-- main_2_TZ.pdf
+    |-- main_2_1_TZ.pdf
+    |-- main_2_2_TZ.pdf
     |-- main_3_prilA.tex
     |-- main_4_prilB.tex
     |-- main.tex
@@ -192,4 +193,4 @@
         |-- table.sty
         `-- url.sty
 
-15 directories, 177 files
+15 directories, 178 files
