@@ -2,3 +2,4 @@ docker/
 
 # SQL Power Architect
 *.architect~
+*.ods#

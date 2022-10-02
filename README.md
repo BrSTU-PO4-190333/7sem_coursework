@@ -44,7 +44,7 @@ make tex
 ## Project structure
 
 ```bash
-tree --charset ascii -a -I ".git|node_modules|docker|*.architect~" > README.tree.txt
+tree --charset ascii -a -I ".git|node_modules|docker|*.architect~|*.ods#" > README.tree.txt
 ```
 
 [View project tree](README.tree.txt)
