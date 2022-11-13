@@ -117,8 +117,9 @@
 \newpage
 \subsection{Функциональная модель}
 
-Функциональная модель объекта автоматизации - описание его на языке выполняемых функций и их отношений.
-Функциональная структура - структура, элементами которой являются функции,
+\textbf{Функциональная модель объекта автоматизации} - описание его на языке выполняемых функций и их отношений.
+
+\textbf{Функциональная структура} - структура, элементами которой являются функции,
 реализуемые подразделениями предприятия, а отношениями являются связи,
 обеспечивающие передачу между элементами предметов труда.
 Функция – это предметно-ориентированное задание или действие,
@@ -128,11 +129,25 @@
 На самом верхнем уровне описываются самые сложные функции,
 которые потом детализируются через свои функциональные составляющие.
 
+Основной символ карты процессов (ARIS Express 2.4i \cite{ArisExpress} Process landscape)
+изображен на рисунке~\ref{fig:ProcessLandscapeElement}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=10cm]
+    {assets/ARIS/ProcessLandscape/Element/ProcessLandscapeElement.png}
+
+    \caption{Основной символ карты процессов (ARIS Express 2.4i Process landscape)}
+
+    \label{fig:ProcessLandscapeElement}
+\end{figure}
+
 Функциональная модель ОА <<Косметический салон>> представлена
 с использованием нотации Process landscape методологии ARIS
-(см.~рисунок~\ref{fig:ARIS_ProcessLandscape}),
+(см.~рисунок~\ref{fig:ArisProcessLandscape}),
 а также таблицей <<Каталог функций>>
-(см.~таблицу~\ref{table:ARIS_ProcessLandscape}).
+(см.~рисунок~\ref{fig:ProcessLandscapeCatalog}).
 
 % \begin{figure}[!h]
 %     \centering
@@ -150,53 +165,26 @@
 %     \label{fig:Fynctii_katalog}
 % \end{figure}
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
 
-    \scriptsize
+    \includegraphics[width=16cm]
+    {assets/ARIS/ProcessLandscape/Catalog/ProcessLandscapeCatalog.png}
 
-    \caption{Каталог функций}
+    \caption{Функциональное дерево ОА "Косметический салон"}
 
-    \label{table:ARIS_ProcessLandscape}
-
-    \begin{tabular}{|M{1.2cm}|M{4cm}|M{4cm}|M{7cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Наименование функции}&\textbf{Организационны элемент}&\textbf{Документ}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|p{1.2cm}|M{4cm}|p{4cm}|M{7cm}|} 
-        \hline
-
-        1       &Деятельность ОА                        &Начальство, мастера&
-        СПР\_ДолжностиСотрудника,
-        СПР\_МоиОрганизации,
-        СПР\_Сотрудники
-        \\ \hline
-
-        1.1     &Управление потоком материалов          &Начальство         &
-        СПР\_Производители,
-        СПР\_ЕдиницыХранения,
-        СПР\_Номенклатура
-        \\ \hline
-
-        1.1.1   &Инвентаризация                         &Начальство, мастера&\\ \hline
-        1.1.1.1 &Создание инвентаризационной комиссии   &Начальство, мастера&
-        СПР\_МестаХранения,
-        ДОК\_ПриказСоздИнвентКомис\\ \hline
-        1.1.1.2 &Проведение инвентаризации              &Начальство, мастера&ДОК\_ИнвентОпись\\ \hline
-        1.1.1.3 &Выдача отчёта инвентаризации           &Начальство, мастера&ОТЧ\_АктНедостТов\\ \hline
-    \end{tabular}
-\end{table}
+    \label{fig:ProcessLandscapeCatalog}
+\end{figure}
 
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[width=8cm, angle=90]
-    {assets/ARIS/ARIS_ProcessLandscape.adf.pdf}
+    \includegraphics[width=16cm]
+    {assets/ARIS/ProcessLandscape/ArisProcessLandscape.pdf}
 
-    \caption{Функциональное дерево ОА "Косметический салон"}
+    \caption{Функциональное дерево ОА <<Косметический салон>>}
 
-    \label{fig:ARIS_ProcessLandscape}
+    \label{fig:ArisProcessLandscape}
 \end{figure}
 
 \newpage
