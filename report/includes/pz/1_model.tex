@@ -14,19 +14,30 @@
 
 \textbf{Органограмма} - графическое представление структуры организации.
 
-Организационная модель ОА <<Косметический салон>> представлена органограммой <<Косметический салон>>
-(см.~рисунок~\ref{fig:ARIS_OrganizationalСhart})
+Основные элементы организационной диаграммы (ARIS Express 2.4i \cite{ArisExpress} Organizational chart)
+представлены на рисунке~\ref{fig:ArisOrganizationalChartElements}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=13cm]
+    {assets/ARIS/OrganizationalChart/Elements/ArisOrganizationalChartElements.png}
+    \caption{Основные элементы организационной диаграммы (ARIS Express 2.4i Organizational chart)}
+    \label{fig:ArisOrganizationalChartElements}
+\end{figure}
+
+Организационная модель ОА <<Косметический салон>> представлена органограммой
+(см. рисунок~\ref{fig:ArisOrganizationalChart_AllOrganization})
 с использованием нотации Organizational chart методологии ARIS,
 а также таблицей <<Каталог организационных единиц>>
-(см.~таблицу~\ref{table:ARIS_OrganizationalСhart}).
+(см.~таблицу~\ref{table:ARIS_OrganizationalChart}).
 
-% \begin{figure}[!h]
-%     \centering
-%     \includegraphics[width=14cm]
-%         {_docs/ОрганизационныеЕдиницы_каталог.jpg}
-%     \caption{Каталог организационых единиц}
-%     \label{fig:OrganizationnieEdinici_katalog}
-% \end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=16cm]
+        {assets/ARIS/OrganizationalChart/AllOrganization.ArisOrganizationalChart.pdf}
+    \caption{Органограмма ОА <<Косметический салон>>}
+    \label{fig:ArisOrganizationalChart_AllOrganization}
+\end{figure}
 
 \begin{table}[h!]
     \centering
@@ -35,7 +46,7 @@
 
     \caption{Каталог организационых единиц}
 
-    \label{table:ARIS_OrganizationalСhart}
+    \label{table:ARIS_OrganizationalChart}
 
     \begin{tabular}{|M{1cm}|M{4cm}|M{10cm}|} 
         \hline
@@ -55,13 +66,53 @@
     \end{tabular}
 \end{table}
 
+Организационная модель инвентаризационная комиссия представлена органограммой
+(см.~рисунок~\ref{fig:ArisOrganizationalChart_InventoryCommission})
+с использованием нотации Organizational chart методологии ARIS
+(ARIS Express 2.4i \cite{ArisExpress} Organizational chart),
+а также таблицей <<Каталог организационных единиц инвентаризационной комиссии>>
+(см.~таблицу~\ref{table:ARIS_OrganizationalChart_InventoryCommission}).
+
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=23cm, angle=90]
-        {assets/ARIS/ARIS_OrganizationalСhart.adf.pdf}
-    \caption{Органограмма ОА <<Косметический салон>>}
-    \label{fig:ARIS_OrganizationalСhart}
+    \includegraphics[height=14cm]
+    {assets/ARIS/OrganizationalChart/InventoryCommission.ArisOrganizationalChart.pdf}
+    \caption{Органограмма инвентаризационная комиссия}
+    \label{fig:ArisOrganizationalChart_InventoryCommission}
 \end{figure}
+
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=14cm]
+%         {_docs/ОрганизационныеЕдиницы_каталог.jpg}
+%     \caption{Каталог организационых единиц}
+%     \label{fig:OrganizationnieEdinici_katalog}
+% \end{figure}
+
+\begin{table}[h!]
+    \centering
+
+    \footnotesize
+
+    \caption{Каталог организационых единиц инвентаризационной комиссии}
+
+    \label{table:ARIS_OrganizationalChart_InventoryCommission}
+
+    \begin{tabular}{|M{1cm}|M{6cm}|M{8cm}|} 
+        \hline
+        \textbf{№ п/п}&\textbf{Наименование организационной единицы}&\textbf{Расшифровка}\\
+    \end{tabular}
+
+    \begin{tabular}{|p{1cm}|p{6cm}|p{8cm}|} 
+        \hline
+        1       &Мето хранения                  &Место, где проводится инвентаризация\\ \hline
+        2       &Инвентаризационная комиссия    &Группа сотрудников\\ \hline
+        3       &Председатель комиссии          &Сотрудник организации\\ \hline
+        3.1     &Члены комиссии                 &Сотрудники организации\\ \hline
+        3.1.1   &Член комисии                   &Сотрудник организации\\ \hline
+
+    \end{tabular}
+\end{table}
 
 \newpage
 \subsection{Функциональная модель}
