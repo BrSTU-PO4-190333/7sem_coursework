@@ -220,13 +220,13 @@
 
     \begin{tabular}{|M{1cm}|p{6cm}|p{8cm}|} 
         \hline
-        1&СПР\_Номенклатура&Номенклатура\\ \hline
-        2&СПР\_Сотрудники&Сотрудники\\ \hline
-        3&СПР\_ДолжостиСотрудника&Должности сотрудника\\ \hline
-        4&СПР\_ЕдиницыХранения&Единицы хранения\\ \hline
-        5&СПР\_МоиОрганизации&Мои организации\\ \hline
-        6&СПР\_Производители&Производители\\ \hline
-        7&СПР\_МестаХранения&Места хранения\\ \hline
+        1   &DE\_CTL\_Nomenclature      &Номенклатура\\ \hline
+        2   &DE\_CTL\_Employees         &Сотрудники\\ \hline
+        3   &DE\_CTL\_EmployeePositions &Должности сотрудника\\ \hline
+        4   &DE\_CTL\_StorageUnits      &Единицы хранения\\ \hline
+        5   &DE\_CTL\_MyOrganizations   &Мои организации\\ \hline
+        6   &DE\_CTL\_Producers         &Производители\\ \hline
+        7   &DE\_CTL\_StorageLocations  &Места хранения\\ \hline
     \end{tabular}
 \end{table}
 
@@ -256,8 +256,8 @@
 
     \begin{tabular}{|M{1cm}|p{6cm}|p{8cm}|} 
         \hline
-        1&ДОК\_ИнвентОпись&Инвентаризационная опись\\ \hline
-        2&ДОК\_ПриказСоздИнвентКомис&Приказ о создании инвентаризационой комиссии\\ \hline
+        1   &DE\_DOC\_OrderCreationInventory Commission &Приказ о создании инвентаризационной комиссии\\ \hline
+        2   &DE\_DOC\_InventoryList                     &Инвентаризационная опись\\ \hline
     \end{tabular}
 \end{table}
 
@@ -276,7 +276,7 @@
 
     \footnotesize
 
-    \caption{Каталог отчётных документов}
+    \caption{Каталог отчётов}
 
     \label{table:OTC_katalog}
 
@@ -287,7 +287,7 @@
 
     \begin{tabular}{|M{1cm}|p{6cm}|p{8cm}|} 
         \hline
-        1&ОТЧ\_АктНедосТов&Акт о недостаче товаров\\ \hline
+        1   &DE\_REP\_InventoryAct  &Акт об инвентаризации\\ \hline
     \end{tabular}
 \end{table}
 
@@ -304,32 +304,40 @@
 \subsubsection{Справочный документ <<Номенклатура>>}
 
 Справочник <<Номенклатура>> - содержит информацию о материалах.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_Nomenklatura_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_Nomenclatures}).
 %и макета (см.~рисунок~\ref{fig:CP_Nomenkl_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_Nomenclatures.png}
+    \caption{Словарь данных справочника <<Номенклатура>>}
+    \label{fig:InformationalModel_DE_CTL_Nomenclatures}
+\end{figure}
 
-    \scriptsize
+% \begin{table}[h!]
+%     \centering
 
-    \caption{Словарь данных справочника <<Номеклатура>>}
+%     \scriptsize
 
-    \label{table:CPR_Nomenklatura_tipi}
+%     \caption{Словарь данных справочника <<Номенклатура>>}
 
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
+%     \label{table:CPR_Nomenklatura_tipi}
 
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Наименование&Наиманование номенклатуры&C64&\\ \hline
-        3&ЕдиницыХране нияId&Единица хранения&N16&СПР\_ЕдиницыХранения\\ \hline
-        4&ПроизводительId&Производитель номенклатуры&N16&СПР\_Производители\\ \hline
-        5&Описание&Описание номенклатуры&C1024&\\ \hline
-    \end{tabular}
-\end{table}
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Предполага-емый тип данных}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1   &id&Код&N16&\\ \hline
+%         2   &de\_name&Наиманование номенклатуры&C64&\\ \hline
+%         3   &de\_description&Единица хранения&N16&СПР\_ЕдиницыХранения\\ \hline
+%         4   &de\_storageUnitId&Производитель номенклатуры&N16&СПР\_Производители\\ \hline
+%         5   &de\_producerId&Описание номенклатуры&C1024&\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -350,32 +358,40 @@
 \subsubsection{Справочный документ <<Сотрудники>>}
 
 Справочник <<Сотрудники>> - содержит информацию о сотрудниках.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_Sotrydniki_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_Employees}).
 %и макета (рисунок~\ref{fig:CP_Sotr_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_Employees.png}
     \caption{Словарь данных справочника <<Сотрудники>>}
+    \label{fig:InformationalModel_DE_CTL_Employees}
+\end{figure}
 
-    \label{table:CPR_Sotrydniki_tipi}
+% \begin{table}[h!]
+%     \centering
 
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
+%     \scriptsize
 
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Фамилия&Фамилия сотрудника&C32&\\ \hline
-        3&Имя&Имя сотрудника&C32&\\ \hline
-        4&Отчество&Отчество сотрудника&C32&\\ \hline
-        5&ДолжностиСотру дникаId&Должность сотрудника&N16&СПР\_ДолжностиСотрудника\\ \hline
-    \end{tabular}
-\end{table}
+%     \caption{Словарь данных справочника <<Сотрудники>>}
+
+%     \label{table:CPR_Sotrydniki_tipi}
+
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&Код&N16&\\ \hline
+%         2&Фамилия&Фамилия сотрудника&C32&\\ \hline
+%         3&Имя&Имя сотрудника&C32&\\ \hline
+%         4&Отчество&Отчество сотрудника&C32&\\ \hline
+%         5&ДолжностиСотру дникаId&Должность сотрудника&N16&СПР\_ДолжностиСотрудника\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -398,29 +414,37 @@
 \subsubsection{Справочный документ <<Должности сотрудника>>}
 
 Справочник <<Должности сотрудника>> - содержит перечисления должностей сотрудника.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_DoljnostiSotrydnika_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_EmployeePositions}).
 %и макета (рисунок~\ref{fig:CP_DoljnCotr_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_EmployeePositions.png}
     \caption{Словарь данных справочника <<Должности сотрудника>>}
+    \label{fig:InformationalModel_DE_CTL_EmployeePositions}
+\end{figure}
 
-    \label{table:CPR_DoljnostiSotrydnika_tipi}
-
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Наименование&Должность сотрудника&C64&\\ \hline
-    \end{tabular}
-\end{table}
+% \begin{table}[h!]
+%     \centering
+% 
+%     \scriptsize
+% 
+%     \caption{Словарь данных справочника <<Должности сотрудника>>}
+% 
+%     \label{table:CPR_DoljnostiSotrydnika_tipi}
+% 
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+% 
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&Код&N16&\\ \hline
+%         2&Наименование&Должность сотрудника&C64&\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -443,29 +467,37 @@
 \subsubsection{Справочный документ <<Единицы хранения>>}
 
 Справочник <<Единицы хранения>> - содержит перечисление единиц хранения.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_EdiniciXraneniya_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_StorageUnits}).
 %и макета (рисунок~\ref{fig:CP_EdXran_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_StorageUnits.png}
     \caption{Словарь данных справочника <<Единицы хранения>>}
+    \label{fig:InformationalModel_DE_CTL_StorageUnits}
+\end{figure}
 
-    \label{table:CPR_EdiniciXraneniya_tipi}
-
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Наименование&Единица хранения&C64&\\ \hline
-    \end{tabular}
-\end{table}
+% \begin{table}[h!]
+%     \centering
+% 
+%     \scriptsize
+% 
+%     \caption{Словарь данных справочника <<Единицы хранения>>}
+% 
+%     \label{table:CPR_EdiniciXraneniya_tipi}
+% 
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+% 
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&Код&N16&\\ \hline
+%         2&Наименование&Единица хранения&C64&\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -486,29 +518,37 @@
 \subsubsection{Справочный документ <<Мои организации>>}
 
 Справочник <<Мои организации>> - содержит информацию о моих организациях.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_MoiOrganizatii_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_MyOrganization}).
 %и макета (рисунок~\ref{fig:CP_MoiOrg_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_MyOrganization.png}
     \caption{Словарь данных справочника <<Мои организации>>}
+    \label{fig:InformationalModel_DE_CTL_MyOrganization}
+\end{figure}
 
-    \label{table:CPR_MoiOrganizatii_tipi}
+% \begin{table}[h!]
+%     \centering
 
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
+%     \scriptsize
 
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Наименование&Название организации&C64&\\ \hline
-    \end{tabular}
-\end{table}
+%     \caption{Словарь данных справочника <<Мои организации>>}
+
+%     \label{table:CPR_MoiOrganizatii_tipi}
+
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&Код&N16&\\ \hline
+%         2&Наименование&Название организации&C64&\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -529,30 +569,37 @@
 \subsubsection{Справочный документ <<Производители>>}
 
 Справочник <<Производители>> - содержит перечисление производителей.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_Proizvoditeli_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_Producers}).
 % и макета (рисунок~\ref{fig:CP_Proizv_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_Producers.png}
     \caption{Словарь данных справочника <<Производители>>}
+    \label{fig:InformationalModel_DE_CTL_Producers}
+\end{figure}
 
-    \label{table:CPR_Proizvoditeli_tipi}
-
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Наименование&Производитель номенклатуры&C64&\\ \hline
-    \end{tabular}
-\end{table}
-
+%\begin{table}[h!]
+%    \centering
+%
+%    \scriptsize
+%
+%    \caption{Словарь данных справочника <<Производители>>}
+%
+%    \label{table:CPR_Proizvoditeli_tipi}
+%
+%    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%        \hline
+%        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%    \end{tabular}
+%
+%    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%        \hline
+%        1&id&Код&N16&\\ \hline
+%        2&Наименование&Производитель номенклатуры&C64&\\ \hline
+%    \end{tabular}
+%\end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -573,29 +620,37 @@
 \subsubsection{Справочный документ <<Места хранения>>}
 
 Справочник <<Места хранения>> - содержит перечисление адреса с номером склада.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:CPR_MestaXraneniay_tipi}).
+Документ представлен в виде словаря данных (см.~рисунок~\ref{fig:InformationalModel_DE_CTL_StorageLocations}).
 % и макета (рисунок~\ref{fig:CP_MestaXran_maket}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_CTL_StorageLocations.png}
     \caption{Словарь данных справочника <<Места хранения>>}
+    \label{fig:InformationalModel_DE_CTL_StorageLocations}
+\end{figure}
 
-    \label{table:CPR_MestaXraneniay_tipi}
-
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Код&N16&\\ \hline
-        2&Наименование&Место хранения номенклатуры (адрес)&C64&\\ \hline
-    \end{tabular}
-\end{table}
+%\begin{table}[h!]
+%    \centering
+%
+%    \scriptsize
+%
+%    \caption{Словарь данных справочника <<Места хранения>>}
+%
+%    \label{table:CPR_MestaXraneniay_tipi}
+%
+%    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%        \hline
+%        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%    \end{tabular}
+%
+%    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%        \hline
+%        1&id&Код&N16&\\ \hline
+%        2&Наименование&Место хранения номенклатуры (адрес)&C64&\\ \hline
+%    \end{tabular}
+%\end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -618,57 +673,73 @@
 
 Оперативный документ <<Приказ о создании инвентаризационной комиссии>>
 - документ, который формируется перед инвентаризацией товара.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:DOC_PrikazCozdInventKomis} и \ref{table:TAB_SpisokInventKomis}),
+Документ представлен в виде словаря данных (см.~рисунки~\ref{fig:InformationalModel_DE_DOC_OrderCreationInventoryCommission} и \ref{fig:InformationalModel_DE_TAB_ListInventoryCommission}),
 макета (см.~рисунок~\ref{fig:DOC_PrilazSozdInventKomis})
-и схемы связей (см.~рисунок~\ref{ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis}).
+и схемы связей (см.~рисунок~\ref{fig:ARIS_GeneralDiagram_DOC_PrikazSozdInventKomis}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_DOC_OrderCreationInventoryCommission.png}
+    \caption{Словарь данных оперативного документа <<Приказ о создании инвентаризационной комиссии>>}
+    \label{fig:InformationalModel_DE_DOC_OrderCreationInventoryCommission}
+\end{figure}
 
-    \scriptsize
-
-    \caption{Словарь данных документа <<Приказ о создании инвентаризационной комиссии>>}
-
-    \label{table:DOC_PrikazCozdInventKomis}
-
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Автоинкримент&C128&\\ \hline
-        2&Номер&Номер документа&N8&\\ \hline
-        3&Дата&Дата проведения&TIME&\\ \hline
-        4&МоиОрганизацииId&Организация&N16&СПР\_МоиОрганизации\\ \hline
-        5&МестаХраненияId&Место хранения&N16&СПР\_МестаХранения\\ \hline
-        6&СотрудникиId\_Пред седательКомиссии&Гланый в комиссии&N16&СПР\_Сотрудники\\ \hline
-        7&СотрудникиId\_Созда тельПриказа&Сотрудник создавший приказ&N16&СПР\_Сотрудники\\ \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_TAB_ListInventoryCommission.png}
     \caption{Словарь данных табличной части <<Список членов инвентаризационной комиссии>>}
+    \label{fig:InformationalModel_DE_TAB_ListInventoryCommission}
+\end{figure}
 
-    \label{table:TAB_SpisokInventKomis}
+% \begin{table}[h!]
+%     \centering
 
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
+%     \scriptsize
 
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&Автоинкримент&N16&\\ \hline
-        2&ПриказСоздИнвент КомисId&Код документа&C128&ДОК\_ПриказСоздИнвентКомис\\ \hline
-        3&СотрудникиId&Сотрудник&N16&СПР\_Сотрудники\\ \hline
-    \end{tabular}
-\end{table}
+%     \caption{Словарь данных документа <<Приказ о создании инвентаризационной комиссии>>}
+
+%     \label{table:DOC_PrikazCozdInventKomis}
+
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&Автоинкримент&C128&\\ \hline
+%         2&Номер&Номер документа&N8&\\ \hline
+%         3&Дата&Дата проведения&TIME&\\ \hline
+%         4&МоиОрганизацииId&Организация&N16&СПР\_МоиОрганизации\\ \hline
+%         5&МестаХраненияId&Место хранения&N16&СПР\_МестаХранения\\ \hline
+%         6&СотрудникиId\_Пред седательКомиссии&Гланый в комиссии&N16&СПР\_Сотрудники\\ \hline
+%         7&СотрудникиId\_Созда тельПриказа&Сотрудник создавший приказ&N16&СПР\_Сотрудники\\ \hline
+%     \end{tabular}
+% \end{table}
+
+% \begin{table}[h!]
+%     \centering
+
+%     \scriptsize
+
+%     \caption{Словарь данных табличной части <<Список членов инвентаризационной комиссии>>}
+
+%     \label{table:TAB_SpisokInventKomis}
+
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&Автоинкримент&N16&\\ \hline
+%         2&ПриказСоздИнвент КомисId&Код документа&C128&ДОК\_ПриказСоздИнвентКомис\\ \hline
+%         3&СотрудникиId&Сотрудник&N16&СПР\_Сотрудники\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -703,58 +774,74 @@
 
 Оперативный документ <<Инвентаризационная опись>>
 - документ, в котором отображаются результаты инвентаризации.
-Документ представлен в виде словаря данных (см.~таблицу~\ref{table:DOC_InventOpis} и \ref{table:TAB_SpisokInventKomis}),
+Документ представлен в виде словаря данных (см.~рисунки~\ref{fig:InformationalModel_DE_DOC_InventoryList} и \ref{fig:InformationalModel_DE_TAB_NomenclatureInventList}),
 макета (см.~рисунок~\ref{fig:DOC_InventOpis})
 и схемы связей (см.~рисунок~\ref{fig:ARIS_GeneralDiagram_DOC_InventOpis}).
 
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_DOC_InventoryList.png}
+    \caption{Словарь данных оперативного документа <<Инвентаризационная опись>>}
+    \label{fig:InformationalModel_DE_DOC_InventoryList}
+\end{figure}
 
-    \scriptsize
-
-    \caption{Словарь данных документа <<Инвентаризационная опись>>}
-
-    \label{table:DOC_InventOpis}
-
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
-
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&UUID&C128&\\ \hline
-        2&Номер&Номер документа&N8&\\ \hline
-        3&Дата&Дата проведения&TIME&\\ \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[h!]
+\begin{figure}[!h]
     \centering
-
-    \scriptsize
-
+    \includegraphics[width=16cm]
+    {assets/InformationalModel/DE_TAB_NomenclatureInventList.png}
     \caption{Словарь данных табличной части <<Список номенклатуры инвентаризационной описи>>}
+    \label{fig:InformationalModel_DE_TAB_NomenclatureInventList}
+\end{figure}
 
-    \label{table:TAB_SpisokInventKomis}
+% \begin{table}[h!]
+%     \centering
 
-    \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
-        \hline
-        \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
-    \end{tabular}
+%     \scriptsize
 
-    \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
-        \hline
-        1&id&UUID&N16&\\ \hline
-        2&ИнвентОписьId&Код документа&C128&ДОК\_ИнвентОпись\\ \hline
-        3&НоменклатураId&Номенклатура&N16&СПР\_Номенклатура\\ \hline
-        4&Цена&Цена номенклатуры&F8&\\ \hline
-        5&КоличПоДаннымБух Учёта&Количество по данным бухгалтерского учёта&N8&\\ \hline
-        6&КоличФактич&Количество фактическое&N8&\\ \hline
-        7&КоличНедосдачи&Количество недосдачи&N8&\\ \hline
-        8&КоличИзлишек&Количество излишек&N8&\\ \hline
-    \end{tabular}
-\end{table}
+%     \caption{Словарь данных документа <<Инвентаризационная опись>>}
+
+%     \label{table:DOC_InventOpis}
+
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&UUID&C128&\\ \hline
+%         2&Номер&Номер документа&N8&\\ \hline
+%         3&Дата&Дата проведения&TIME&\\ \hline
+%     \end{tabular}
+% \end{table}
+
+% \begin{table}[h!]
+%     \centering
+
+%     \scriptsize
+
+%     \caption{Словарь данных табличной части <<Список номенклатуры инвентаризационной описи>>}
+
+%     \label{table:TAB_SpisokInventKomis}
+
+%     \begin{tabular}{|M{0.7cm}|M{3.1cm}|M{5cm}|M{2cm}|M{5cm}|} 
+%         \hline
+%         \textbf{№ п/п}&\textbf{Идентификатор}&\textbf{Наименование}&\textbf{Тип данных и значность}&\textbf{Источник данных}\\ \hline
+%     \end{tabular}
+
+%     \begin{tabular}{|M{0.7cm}|p{3.1cm}|p{5cm}|p{2cm}|p{5cm}|} 
+%         \hline
+%         1&id&UUID&N16&\\ \hline
+%         2&ИнвентОписьId&Код документа&C128&ДОК\_ИнвентОпись\\ \hline
+%         3&НоменклатураId&Номенклатура&N16&СПР\_Номенклатура\\ \hline
+%         4&Цена&Цена номенклатуры&F8&\\ \hline
+%         5&КоличПоДаннымБух Учёта&Количество по данным бухгалтерского учёта&N8&\\ \hline
+%         6&КоличФактич&Количество фактическое&N8&\\ \hline
+%         7&КоличНедосдачи&Количество недосдачи&N8&\\ \hline
+%         8&КоличИзлишек&Количество излишек&N8&\\ \hline
+%     \end{tabular}
+% \end{table}
 
 % \begin{figure}[!h]
 %     \centering
@@ -787,11 +874,11 @@
 \end{figure}
 
 \newpage
-\subsubsection{Отчётный документ <<Акт о нестачи товара>>}
+\subsubsection{Отчёт <<Акт об инвентаризации>>}
 
-Отчётный документ <<Акт о нестаче товара>>
-- формируется после проведения инвентаризации (см.~рисунок~\ref{OTC_ActNedoctachiTovara}).
-Состоит отчёт из данных из двух документов:
+Отчёт <<Акт об инвентаризации>>
+- формируется после проведения инвентаризации (см. рисунок~\ref{fig:OTC_ActNedoctachiTovara}).
+Состоит отчёт из данных двух документов:
 \begin{itemize}
     \item <<Приказ о создании инвентаризационной комиссии>>;
     \item <<Инвентаризационная опись>>.
