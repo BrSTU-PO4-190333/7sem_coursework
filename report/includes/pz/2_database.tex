@@ -405,10 +405,27 @@
 \newpage
 \subsection{Физическая модель}
 
+\textbf{Физическая модель} - это представление в виде SQL скриптов, которые создают таблицы и связи между ними,
+которые получаются из логической модели.
+
+Для начала создадим базу данных. Её можно быстро создать через консоль.
+
+\begin{lstlisting}[name=Создание базы данных в Postgres]
+psql -U st190333_ -d postgres -h localhost -W
+CREATE DATABASE st190333_7sem_coursework;
+exit
+exit
+\end{lstlisting}
+
+Физическую модель получим из логической модели нажав кнопку <<Forward Engineer SQL Script>>
+в SQL Power Arhitect 1.0.7 \cite{SqlPowerArhitect}.
+
 \lstinputlisting[language=sql]
 {assets/database/SQL_CreateTable.sql}
 
 \newpage
+
+Чтобы быстро удалить базу данных можем использовать скрипт с DROP TABLE SQL-командами.
 
 \lstinputlisting[language=sql]
 {assets/database/SQL_DropTable.sql}
