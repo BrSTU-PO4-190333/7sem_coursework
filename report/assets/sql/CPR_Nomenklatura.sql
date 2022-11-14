@@ -1,5 +1,5 @@
-
-INSERT INTO `СПР_Номенклатура`(`Наименование`, `ЕдиницыХраненияId`, `ПроизводителиId`, `Описание`) VALUES
+INSERT INTO DE_CTL_Nomenclatures
+(de_name, de_storageUnitsId, de_producersId, de_description) VALUES
 (
     'Перчатки винил/нитрил чёрные, 100шт',
     '2', '1',

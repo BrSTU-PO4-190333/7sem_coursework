@@ -46,8 +46,10 @@ CREATE TABLE public.DE_CTL_Positions (
 
 ALTER SEQUENCE public.de_ctl_positions_id_seq_1 OWNED BY public.DE_CTL_Positions.id;
 
+CREATE SEQUENCE public.de_ctl_employees_id_seq_1_1;
+
 CREATE TABLE public.DE_CTL_Employees (
-                id INTEGER NOT NULL,
+                id INTEGER NOT NULL DEFAULT nextval('public.de_ctl_employees_id_seq_1_1'),
                 de_surname VARCHAR(32) NOT NULL,
                 de_name VARCHAR(32) NOT NULL,
                 de_patronymic VARCHAR(32),
@@ -55,6 +57,8 @@ CREATE TABLE public.DE_CTL_Employees (
                 CONSTRAINT de_ctl_employees_pk PRIMARY KEY (id)
 );
 
+
+ALTER SEQUENCE public.de_ctl_employees_id_seq_1_1 OWNED BY public.DE_CTL_Employees.id;
 
 CREATE SEQUENCE public.de_ctl_storagelocations_id_seq_1;
 
@@ -115,13 +119,17 @@ CREATE TABLE public.DE_TAB_NomenclatureInventList (
 
 ALTER SEQUENCE public.de_tab_nomenclatureinventlist_id_seq OWNED BY public.DE_TAB_NomenclatureInventList.id;
 
+CREATE SEQUENCE public.de_tab_listinventorycommission_id_seq;
+
 CREATE TABLE public.DE_TAB_ListInventoryCommission (
-                id INTEGER NOT NULL,
+                id INTEGER NOT NULL DEFAULT nextval('public.de_tab_listinventorycommission_id_seq'),
                 de_orderCreationId VARCHAR(128) NOT NULL,
                 de_employeesId INTEGER NOT NULL,
                 CONSTRAINT de_tab_listinventorycommission_pk PRIMARY KEY (id)
 );
 
+
+ALTER SEQUENCE public.de_tab_listinventorycommission_id_seq OWNED BY public.DE_TAB_ListInventoryCommission.id;
 
 ALTER TABLE public.DE_CTL_Nomenclatures ADD CONSTRAINT de_ctl_producers_de_ctl_nomenclatures_fk
 FOREIGN KEY (de_producersId)

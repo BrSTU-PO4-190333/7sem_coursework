@@ -1,5 +1,4 @@
-
-INSERT INTO `СПР_Производители`(`Наименование`) VALUES
+INSERT INTO DE_CTL_Producers (de_name) VALUES
 ('Нет данных'),
 ('Беларусь'),
 ('Россия'),

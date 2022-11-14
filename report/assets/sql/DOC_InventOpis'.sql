@@ -2,12 +2,13 @@
 -- Начало транзакции инвентаризационной описи
 START TRANSACTION;
 
-INSERT INTO ДОК_ИнвентОпись (id, Дата, Номер) VALUES
+INSERT INTO DE_DOC_InventoryList
+(id, de_date, de_number) VALUES
 ('aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee1', '2022-05-10 12:56:00', '1');
 
-INSERT INTO ТАБ_СписокНоменклИнвентОписи (
-    ИнвентОписьId, НоменклатураId, Цена,
-    КоличПоДаннымБухУчёта, КоличФактич, КоличНедостачи, КоличИзлишек
+INSERT INTO DE_TAB_NomenclatureInventList (
+    de_inventoryListId, de_nomenclatureId, de_cost,
+    de_accountingQuantity, de_actualQuantity, de_shortage, de_surplusQuantity
 ) VALUES
 ('aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee1', '1', '17.5', '2',  '2',  '0', '0'),
 ('aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee1', '2', '11.5', '10', '10', '0', '0'),
