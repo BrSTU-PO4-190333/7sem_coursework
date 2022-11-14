@@ -102,7 +102,7 @@ CREATE SEQUENCE public.de_tab_nomenclatureinventlist_id_seq;
 
 CREATE TABLE public.DE_TAB_NomenclatureInventList (
                 id INTEGER NOT NULL DEFAULT nextval('public.de_tab_nomenclatureinventlist_id_seq'),
-                de_InventoryListId VARCHAR(128) NOT NULL,
+                de_inventoryListId VARCHAR(128) NOT NULL,
                 de_nomenclatureId INTEGER NOT NULL,
                 de_cost REAL NOT NULL,
                 de_accountingQuantity INTEGER NOT NULL,
@@ -201,7 +201,7 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE public.DE_TAB_NomenclatureInventList ADD CONSTRAINT de_doc_inventorylist_de_tab_nomenclatureinventlist_fk
-FOREIGN KEY (de_InventoryListId)
+FOREIGN KEY (de_inventoryListId)
 REFERENCES public.DE_DOC_InventoryList (id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
