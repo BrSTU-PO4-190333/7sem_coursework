@@ -88,7 +88,7 @@
   <table id="TAB21" populated="true" UUID="a3de6486-e39a-4ae4-a26b-cbe77bb5a317" name="DE_CTL_Employees" objectType="TABLE" physicalName="DE_CTL_Employees" >
    <remarks></remarks>
    <folder id="FOLTAB211" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL22" populated="true" UUID="81719e9c-f74a-4f1b-bc4c-fd92879d378b" autoIncrement="false" autoIncrementSequenceName="DE_CTL_Employees_id_seq_1_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL22" populated="true" UUID="81719e9c-f74a-4f1b-bc4c-fd92879d378b" autoIncrement="true" autoIncrementSequenceName="DE_CTL_Employees_id_seq_1_1" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL23" populated="true" UUID="d5181e25-c4cf-486d-8c6c-48754a1cbb71" autoIncrement="false" autoIncrementSequenceName="DE_CTL_Employees_de_surname_seq" defaultValue="" name="de_surname" nullable="0" physicalName="de_surname" precision="32" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -137,7 +137,7 @@
   <table id="TAB34" populated="true" UUID="2e9c32f9-e65a-48c5-9630-087ae83a09af" name="DE_TAB_ListInventoryCommission" objectType="TABLE" physicalName="DE_TAB_ListInventoryCommission" >
    <remarks></remarks>
    <folder id="FOLTAB341" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL35" populated="true" UUID="95cf20e5-c158-4aa1-97d3-ca9490ce291b" autoIncrement="false" autoIncrementSequenceName="DE_TAB_ListInventoryCommission_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL35" populated="true" UUID="95cf20e5-c158-4aa1-97d3-ca9490ce291b" autoIncrement="true" autoIncrementSequenceName="DE_TAB_ListInventoryCommission_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL36" populated="true" UUID="57f7ea51-977d-4b85-810d-53286efc8ce0" autoIncrement="false" autoIncrementSequenceName="DE_DOC_OrderCreation_id_seq" defaultValue="" name="de_orderCreationId" nullable="0" physicalName="de_orderCreationId" precision="128" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
