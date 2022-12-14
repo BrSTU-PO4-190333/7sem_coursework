@@ -1,21 +1,7 @@
 .
-|-- database
-|   |-- docker-compose.mysql.yml
-|   |-- .env
-|   |-- .env.example
-|   `-- .gitignore
 |-- docker-compose.tex.yml
 |-- .gitignore
 |-- LICENSE
-|-- literature-generator
-|   |-- app.js
-|   |-- .gitignore
-|   |-- input.txt
-|   |-- output.txt
-|   |-- package.json
-|   |-- package-lock.json
-|   |-- .prettierignore
-|   `-- .prettierrc.json
 |-- Makefile
 |-- README.md
 |-- README.tree.txt
@@ -33,66 +19,196 @@
     |   |   |-- ARIS_OrganizationalСhart.adf
     |   |   |-- ARIS_OrganizationalСhart.adf.pdf
     |   |   |-- ARIS_ProcessLandscape.adf
-    |   |   `-- ARIS_ProcessLandscape.adf.pdf
+    |   |   |-- ARIS_ProcessLandscape.adf.pdf
+    |   |   |-- BusinessProcess
+    |   |   |   |-- ArisBusinessProcess.adf
+    |   |   |   |-- ArisBusinessProcess.png
+    |   |   |   `-- Elements
+    |   |   |       |-- Activity.adf
+    |   |   |       |-- Activity.png
+    |   |   |       |-- And.adf
+    |   |   |       |-- And.png
+    |   |   |       |-- BusinessProccessElements.png
+    |   |   |       |-- BusinessProccessElements.xlsx
+    |   |   |       |-- Database.adf
+    |   |   |       |-- Database.png
+    |   |   |       |-- Document.adf
+    |   |   |       |-- Document.png
+    |   |   |       |-- Entity.adf
+    |   |   |       |-- Entity.png
+    |   |   |       |-- Event.adf
+    |   |   |       |-- Event.png
+    |   |   |       |-- ItSystem.adf
+    |   |   |       |-- ItSystem.png
+    |   |   |       |-- Or.adf
+    |   |   |       |-- Or.png
+    |   |   |       |-- ProcessInterface.adf
+    |   |   |       |-- ProcessInterface.png
+    |   |   |       |-- Product.adf
+    |   |   |       |-- Product.png
+    |   |   |       |-- Risk.adf
+    |   |   |       |-- Risk.png
+    |   |   |       |-- xOr.adf
+    |   |   |       `-- xOr.png
+    |   |   |-- DataModel
+    |   |   |   |-- ConceptualModels
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись.adf
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись.png
+    |   |   |   |   |-- ГП_ДОК_ПриказСозданияИнвентКомиссии.adf
+    |   |   |   |   `-- ГП_ДОК_ПриказСозданияИнвентКомиссии.png
+    |   |   |   |-- Elements
+    |   |   |   |   |-- ArisDataModel.png
+    |   |   |   |   |-- ArisDataModel.xlsx
+    |   |   |   |   |-- Attribute.ArisDataModel.adf
+    |   |   |   |   |-- Attribute.ArisDataModel.png
+    |   |   |   |   |-- Entity.ArisDataModel.adf
+    |   |   |   |   |-- Entity.ArisDataModel.png
+    |   |   |   |   |-- ForeignKey.ArisDataModel.adf
+    |   |   |   |   |-- ForeignKey.ArisDataModel.png
+    |   |   |   |   |-- PrimaryKey.ArisDataModel.adf
+    |   |   |   |   `-- PrimaryKey.ArisDataModel.png
+    |   |   |   |-- GeneralConceptualModel
+    |   |   |   |   |-- GeneralConceptualModel.adf
+    |   |   |   |   `-- GeneralConceptualModel.png
+    |   |   |   `-- Relations
+    |   |   |       |-- ArisDataModelRelations.png
+    |   |   |       |-- ArisDataModelRelations.xlsx
+    |   |   |       |-- Relation0С.ArisDataModel.adf
+    |   |   |       |-- Relation0С.ArisDataModel.png
+    |   |   |       |-- Relation1.ArisDataModel.adf
+    |   |   |       |-- Relation1.ArisDataModel.png
+    |   |   |       |-- Relation2.ArisDataModel.adf
+    |   |   |       |-- Relation2.ArisDataModel.png
+    |   |   |       |-- RelationEmpty.ArisDataModel.adf
+    |   |   |       |-- RelationEmpty.ArisDataModel.png
+    |   |   |       |-- RelationN.ArisDataModel.adf
+    |   |   |       |-- RelationN.ArisDataModel.png
+    |   |   |       |-- RelationС.ArisDataModel.adf
+    |   |   |       `-- RelationС.ArisDataModel.png
+    |   |   |-- GeneralDiagram
+    |   |   |   |-- dict
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись_словарь.ods
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись_словарь.png
+    |   |   |   |   |-- ГП_ДОК_ПриказСозданияИнвентКомиссии_словарь.ods
+    |   |   |   |   `-- ГП_ДОК_ПриказСозданияИнвентКомиссии_словарь.png
+    |   |   |   |-- Elements
+    |   |   |   |   |-- ArisGeneralDiagram_Cloud.adf
+    |   |   |   |   |-- ArisGeneralDiagram_Cloud.png
+    |   |   |   |   |-- ArisGeneralDiagram_Display.adf
+    |   |   |   |   |-- ArisGeneralDiagram_Display.png
+    |   |   |   |   |-- ArisGeneralDiagram_Document.adf
+    |   |   |   |   |-- ArisGeneralDiagram_Document.png
+    |   |   |   |   |-- ArisGeneralDiagram_FoldedCorner.adf
+    |   |   |   |   |-- ArisGeneralDiagram_FoldedCorner.png
+    |   |   |   |   |-- ArisGeneralDiagram_Information.adf
+    |   |   |   |   |-- ArisGeneralDiagram_Information.png
+    |   |   |   |   |-- ArisGeneralDiagram_Storage.adf
+    |   |   |   |   |-- ArisGeneralDiagram_Storage.png
+    |   |   |   |   |-- GeneralDiagramElements.png
+    |   |   |   |   `-- GeneralDiagramElements.xlsx
+    |   |   |   |-- layouts
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись.ods
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись.png
+    |   |   |   |   |-- ГП_ДОК_ПриказСозданияИнвентКомиссии.ods
+    |   |   |   |   |-- ГП_ДОК_ПриказСозданияИнвентКомиссии.png
+    |   |   |   |   |-- ГП_ОТЧ_АктОбИнвентаризации.ods
+    |   |   |   |   `-- ГП_ОТЧ_АктОбИнвентаризации.png
+    |   |   |   |-- relations
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись.adf
+    |   |   |   |   |-- ГП_ДОК_ИнвентОпись.png
+    |   |   |   |   |-- ГП_ДОК_ПриказСоздИнвентКомиссии.adf
+    |   |   |   |   |-- ГП_ДОК_ПриказСоздИнвентКомиссии.png
+    |   |   |   |   |-- ГП_ОТЧ_АктОбИнвентаризации.adf
+    |   |   |   |   `-- ГП_ОТЧ_АктОбИнвентаризации.png
+    |   |   |   |-- ГП_ДОК_.ods
+    |   |   |   |-- ГП_ДОК_.png
+    |   |   |   |-- ГП_ОТЧ_.ods
+    |   |   |   |-- ГП_ОТЧ_.png
+    |   |   |   |-- ГП_СПР_.ods
+    |   |   |   `-- ГП_СПР_.png
+    |   |   |-- OrganizationalChart
+    |   |   |   |-- all
+    |   |   |   |   |-- ArisOrganizationalChart.adf
+    |   |   |   |   |-- ArisOrganizationalChart.png
+    |   |   |   |   |-- OrganizationalChartCatalog.ods
+    |   |   |   |   `-- OrganizationalChartCatalog.png
+    |   |   |   |-- comission
+    |   |   |   |   |-- ArisOrganizationalChart.adf
+    |   |   |   |   |-- ArisOrganizationalChart.png
+    |   |   |   |   |-- OrganizationalChartCatalog.ods
+    |   |   |   |   `-- OrganizationalChartCatalog.png
+    |   |   |   `-- Elements
+    |   |   |       |-- ArisOrganizationalChartElements.png
+    |   |   |       |-- ArisOrganizationalChartElements.xlsx
+    |   |   |       |-- Location.ArisOrganizationalChart.adf
+    |   |   |       |-- Location.ArisOrganizationalChart.png
+    |   |   |       |-- OrganizationalUnit.ArisOrganizationalChart.adf
+    |   |   |       |-- OrganizationalUnit.ArisOrganizationalChart.png
+    |   |   |       |-- Person.ArisOrganizationalChart.adf
+    |   |   |       |-- Person.ArisOrganizationalChart.png
+    |   |   |       |-- Role.ArisOrganizationalChart.adf
+    |   |   |       `-- Role.ArisOrganizationalChart.png
+    |   |   `-- ProcessLandscape
+    |   |       |-- ArisProcessLandscape.adf
+    |   |       |-- ArisProcessLandscape.png
+    |   |       |-- Element
+    |   |       |   |-- Process.ArisProcessLandscape.adf
+    |   |       |   |-- Process.ArisProcessLandscape.png
+    |   |       |   |-- ProcessLandscapeElement.png
+    |   |       |   `-- ProcessLandscapeElement.xlsx
+    |   |       |-- ProcessLandscapeCatalog.ods
+    |   |       `-- ProcessLandscapeCatalog.png
     |   |-- database
-    |   |   |-- ArchitectureDatabase.architect
-    |   |   |-- ArchitectureDatabase.architect.pdf
-    |   |   |-- DataModel_DOC.bundle.adf
-    |   |   |-- DataModel_DOC.bundle.adf.pdf
-    |   |   |-- DataModel_DOC_InventOpic'.adf
-    |   |   |-- DataModel_DOC_InventOpic'.adf.pdf
-    |   |   |-- DataModel_DOC_PrikazCozdInventKom.adf
-    |   |   |-- DataModel_DOC_PrikazCozdInventKom.adf.pdf
-    |   |   |-- SQL_CreateTable.sql
-    |   |   `-- SQL_DropTable.sql
-    |   |-- etalons
-    |   |   |-- CPR_DolzhnostiSotrudnika.jpg
-    |   |   |-- CPR_DolzhnostiSotrudnika.ods
-    |   |   |-- CPR_EdinicyHraneniay.jpg
-    |   |   |-- CPR_EdinicyHraneniay.ods
-    |   |   |-- CPR_MestaHraneniay.jpg
-    |   |   |-- CPR_MestaHraneniay.ods
-    |   |   |-- CPR_MoiOrganizacii.jpg
-    |   |   |-- CPR_MoiOrganizacii.ods
-    |   |   |-- CPR_Nomenklatura.jpg
-    |   |   |-- CPR_Nomenklatura.ods
-    |   |   |-- CPR_Proizvoditeli.jpg
-    |   |   |-- CPR_Proizvoditeli.ods
-    |   |   |-- CPR_Sotrudniki.jpg
-    |   |   |-- CPR_Sotrudniki.ods
-    |   |   |-- DOC_InventOpis'.jpg
-    |   |   |-- DOC_InventOpis'.ods
-    |   |   |-- DOC_PrilazSozdInventKomis.jpg
-    |   |   `-- DOC_PrilazSozdInventKomis.ods
-    |   |-- layouts
-    |   |   |-- DOC_InventOpis'.jpg
-    |   |   |-- DOC_InventOpis'.ods
-    |   |   |-- DOC_PrilazSozdInventKomis.jpg
-    |   |   |-- DOC_PrilazSozdInventKomis.ods
-    |   |   |-- OTC_ActNedoctachiTovara.jpg
-    |   |   `-- OTC_ActNedoctachiTovara.ods
-    |   `-- sql
-    |       |-- CPR_DolzhnostiSotrudnika.png
-    |       |-- CPR_DolzhnostiSotrudnika.sql
-    |       |-- CPR_EdinicyHraneniay.png
-    |       |-- CPR_EdinicyHraneniay.sql
-    |       |-- CPR_MestaHraneniay.png
-    |       |-- CPR_MestaHraneniay.sql
-    |       |-- CPR_MoiOrganizacii.png
-    |       |-- CPR_MoiOrganizacii.sql
-    |       |-- CPR_Nomenklatura.png
-    |       |-- CPR_Nomenklatura.sql
-    |       |-- CPR_Proizvoditeli.png
-    |       |-- CPR_Proizvoditeli.sql
-    |       |-- CPR_Sotrudniki.png
-    |       |-- CPR_Sotrudniki.sql
-    |       |-- DOC_InventOpis'.png
-    |       |-- DOC_InventOpis'.sql
-    |       |-- DOC_PrilazSozdInventKomis.png
-    |       |-- DOC_PrilazSozdInventKomis.sql
-    |       |-- SQL_Insert.sql
-    |       |-- TAB_SpisokInventKomis.png
-    |       `-- TAB_SpisokNomenklInventOpisi.png
+    |   |   |-- Relations
+    |   |   |   |-- Relation_1_to_01.pdf
+    |   |   |   |-- Relation_1_to_01.png
+    |   |   |   |-- Relation_1_to_0n.pdf
+    |   |   |   |-- Relation_1_to_0n.png
+    |   |   |   |-- Relation_1_to_1n.pdf
+    |   |   |   |-- Relation_1_to_1n.png
+    |   |   |   |-- RelationPK_1_0n.pdf
+    |   |   |   |-- RelationPK_1_0n.png
+    |   |   |   |-- RelationPK_1_to_01.pdf
+    |   |   |   |-- RelationPK_1_to_01.png
+    |   |   |   |-- RelationPK_1_to_1n.pdf
+    |   |   |   |-- RelationPK_1_to_1n.png
+    |   |   |   |-- RelationsSqlPowerArchitect.png
+    |   |   |   `-- RelationsSqlPowerArchitect.xlsx
+    |   |   |-- SqlPowerArchitect
+    |   |   |   |-- logic_model.architect
+    |   |   |   `-- logic_model.pdf
+    |   |   `-- Types
+    |   |       |-- LogicModelTypes.ods
+    |   |       |-- ГП_ДОК_ИнветОпись.png
+    |   |       |-- ГП_ДОК_ПриказСозданияИнвентКомиссии.png
+    |   |       |-- ГП_СПР_Должности.png
+    |   |       |-- ГП_СПР_ЕдиницыХранения.png
+    |   |       |-- ГП_СПР_МестаХранения.png
+    |   |       |-- ГП_СПР_МоиОрганизации.png
+    |   |       |-- ГП_СПР_Номенклатура.png
+    |   |       |-- ГП_СПР_Производители.png
+    |   |       |-- ГП_СПР_Сотрудники.png
+    |   |       |-- ГП_ТБЧ_СписокНоменклИнвентОписи.png
+    |   |       `-- ГП_ТБЧ_СписокЧленовИнвентКомиссии.png
+    |   `-- etalons
+    |       |-- 1__ГП_СПР_Должности.jpg
+    |       |-- 1__ГП_СПР_Должности.ods
+    |       |-- 2__ГП_СПР_МоиОрганизации.jpg
+    |       |-- 2__ГП_СПР_МоиОрганизации.ods
+    |       |-- 3__ГП_СПР_МестаХранения.jpg
+    |       |-- 3__ГП_СПР_МестаХранения.ods
+    |       |-- 4__ГП_СПР_Производители.jpg
+    |       |-- 4__ГП_СПР_Производители.ods
+    |       |-- 5__ГП_СПР_ЕдиницыХранения.jpg
+    |       |-- 5__ГП_СПР_ЕдиницыХранения.ods
+    |       |-- 6__ГП_СПР_Сотрудники.jpg
+    |       |-- 6__ГП_СПР_Сотрудники.ods
+    |       |-- 7__ГП_СПР_Номенклатура.jpg
+    |       |-- 7__ГП_СПР_Номенклатура.ods
+    |       |-- 8__ГП_ДОК_ПрикСоздИнвКомиссии.jpg
+    |       |-- 8__ГП_ДОК_ПрикСоздИнвКомиссии.ods
+    |       |-- 9__ГП_ДОК_ИнвентОпись.jpg
+    |       `-- 9__ГП_ДОК_ИнвентОпись.ods
     |-- env
     |   |-- coursework.sty
     |   `-- global.sty
@@ -123,6 +239,39 @@
     |-- main_4_prilB.tex
     |-- main.tex
     |-- Makefile
+    |-- sql
+    |   |-- 0.sql
+    |   |-- 1.sql
+    |   |-- 1__ГП_СПР_Должности.png
+    |   |-- 1__ГП_СПР_Должности.txt
+    |   |-- 2.sql
+    |   |-- 2__ГП_СПР_МоиОрганизации.png
+    |   |-- 2__ГП_СПР_МоиОрганизации.txt
+    |   |-- 3.sql
+    |   |-- 3__ГП_СПР_МестаХранения.png
+    |   |-- 3__ГП_СПР_МестаХранения.txt
+    |   |-- 4.sql
+    |   |-- 4__ГП_СПР_Производители.png
+    |   |-- 4__ГП_СПР_Производители.txt
+    |   |-- 5.sql
+    |   |-- 5__ГП_СПР_ЕдиницыХранения.png
+    |   |-- 5__ГП_СПР_ЕдиницыХранения.txt
+    |   |-- 6.sql
+    |   |-- 6__ГП_СПР_Сотрудники.png
+    |   |-- 6__ГП_СПР_Сотрудники.txt
+    |   |-- 7.sql
+    |   |-- 7__ГП_СПР_Номенклатура.png
+    |   |-- 7__ГП_СПР_Номенклатура.txt
+    |   |-- 8.sql
+    |   |-- 8__ГП_ДОК_ПрикСоздИнвКомиссии.png
+    |   |-- 8__ГП_ДОК_ПрикСоздИнвКомиссии.txt
+    |   |-- 8__ГП_ТБЧ_СписЧлИнвКом.png
+    |   |-- 8__ГП_ТБЧ_СписЧлИнвКом.txt
+    |   |-- 9.sql
+    |   |-- 9__ГП_ДОК_ИнвентОпись.png
+    |   |-- 9__ГП_ДОК_ИнвентОпись.txt
+    |   |-- 9__ГП_ТБЧ_СписокНоменклИнвентОписи.png
+    |   `-- 9__ГП_ТБЧ_СписокНоменклИнвентОписи.txt
     `-- styles
         |-- listing.sty
         |-- list.sty
@@ -131,4 +280,4 @@
         |-- table.sty
         `-- url.sty
 
-15 directories, 116 files
+33 directories, 247 files

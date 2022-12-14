@@ -1,7 +1,13 @@
 <p align="center">
-  <img height="100" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png" alt="" />
-  <img height="100" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" alt="" />
-  <img height="100" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" alt="" />
+  <img height="100"
+  style="background-color: white; border-radius: 25%; padding: 8px;"
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" />
+  <img height="100"
+  style="background-color: white; border-radius: 25%; padding: 8px;"
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />    
+  <img height="100"
+  style="background-color: white; border-radius: 25%; padding: 8px;"
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
 </p>
 
 **Menu**:
@@ -13,16 +19,9 @@
 
 ## Task
 
-- adhitect database and write coursework
+- architect database and write coursework
 
 ## How to run app
-
-Start database:
-
-```bash
-make db-install
-make db
-```
 
 Create report:
 
@@ -44,7 +43,7 @@ make tex
 ## Project structure
 
 ```bash
-tree --charset ascii -a -I ".git|node_modules|docker|*.architect~|*.ods#" > README.tree.txt
+tree --charset ascii -a -I ".git|docker|*.architect~|*.ods#" > README.tree.txt
 ```
 
 [View project tree](README.tree.txt)

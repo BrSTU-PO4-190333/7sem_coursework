@@ -1,5 +1,0 @@
- id |          de_ordercreationid          | de_employeesid 
-----+--------------------------------------+----------------
-  1 | aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee1 |              3
-  2 | aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee1 |              4
-(2 rows)

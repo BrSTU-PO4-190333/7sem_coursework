@@ -23,7 +23,7 @@
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[height=13cm]
+    \includegraphics[width=18cm]
     {assets/ARIS/DataModel/Elements/ArisDataModel.png}
 
     \caption{Основные символы модели данных (ARIS Express 2.4i Data Model)}
@@ -31,133 +31,86 @@
     \label{fig:ArisDataModel}
 \end{figure}
 
-Модель данных позволяет взглянуть на данные (например, бизнес-объекты) и отношения между ними.
-
-Виды отношений между объектами (1:1, 1:n, ...) задаются с помощью атрибутов связей.
-
-Виды связей сущностей в ARIS Express 2.4i \cite{ArisExpress} Data Model изображены на рисунке~\ref{fig:ArisDataModelRelations}.
+Модель данных позволяет взглянуть на данные и отношения между ними.
+Виды отношений между объектами (1:1, 1:01, 1:0n, 1:1n, 1:n) задаются с помощью атрибутов связей.
+Виды связей сущностей в ARIS Express 2.4i \cite{ArisExpress} нотации <<Data Model>> изображены на рисунке~\ref{fig:ArisDataModelRelations}.
 
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[width=16cm]
+    \includegraphics[width=17cm]
     {assets/ARIS/DataModel/Relations/ArisDataModelRelations.png}
 
-    \caption{Связи сущностей (ARIS Express 2.4i Data Model)}
+    \caption{Связи сущностей}
 
     \label{fig:ArisDataModelRelations}
 \end{figure}
 
-В ARIS Express 2.4i \cite{ArisExpress} Data Model существуют следующие виды связей сущностей:
-\begin{itemize}
-    \item к одному;
-    \item нет связи или к одному;
-    \item нет связи или ко многим;
-    \item к одному или ко многим;
-    \item ко многим.
-\end{itemize}
+\subsubsection*{Локальная концептуальная модель для процедуры <<Создание инвентаризационной комиссии>>}
 
-\newpage
-
-\subsubsection{ЛКМ для процедуры <<Создание инвентаризационной комиссии>>}
-
-Локальная концептуальная модель
-(спроектированна с использованием ARIS Express 2.4 \cite{ArisExpress} Data Model)
+ЛКМ (локальная концептуальная модель)
 для процедуры <<Создание инвентаризационной комиссии>>
-изображена на рисунке~\ref{fig:DE_DOC_OrderCreationInventoryCommission}.
-
-Локальная концептуальная модель соотвествует функциональному дереву ОА <<Косметический салон>>.
+(спроектирована в ARIS Express 2.4 \cite{ArisExpress}, используя нотацию <<Data Model>>)
+соответствует функциональному дереву
+и изображена на рисунке~\ref{fig:DE_DOC_OrderCreationInventoryCommission}.
 
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[width=15cm]
-    {assets/ARIS/DataModel/ConceptualModels/DE_DOC_OrderCreationInventoryCommission.ArisDataModel.pdf}
+    \includegraphics[width=18cm]
+    {assets/ARIS/DataModel/ConceptualModels/ГП_ДОК_ПриказСозданияИнвентКомиссии.png}
 
-    \caption{ЛКМ для процедуры <<Создание инвентаризационной комиссии>>}
+    \caption{Локальная концептуальная модель для процедуры <<Создание инвентаризационной комиссии>>}
 
     \label{fig:DE_DOC_OrderCreationInventoryCommission}
 \end{figure}
 
-% \begin{figure}[!h]
-%     \centering
+\subsubsection*{Локальная концептуальная модель для процедуры <<Проведение инвентаризации>>}
 
-%     \includegraphics[width=18cm]
-%     {assets/database/DataModel_DOC_PrikazCozdInventKom.adf.pdf}
-
-%     \caption{Локальная концептуальная модель для бизнес процесса с документом <<Приказ о создании инвентаризационной комиссии>>}
-
-%     \label{fig:DataModel_DOC_PrikazCozdInventKom}
-% \end{figure}
-
-%\newpage
-
-\subsubsection{ЛКМ для процедуры <<Проведение инвентаризации>>}
-
-Локальная концептуальная модель
-(спроектированна с использованием ARIS Express 2.4 \cite{ArisExpress} Data Model)
-для процесса с документом <<Проведение инвентаризации>>
-изображена на рисунке~\ref{fig:DE_DOC_InventoryList}.
-
-Локальная концептуальная модель соотвествует функциональному дереву ОА <<Косметический салон>>.
+ЛКМ (локальная концептуальная модель)
+для процедуры <<Проведение инвентаризации>>
+(спроектирована в ARIS Express 2.4 \cite{ArisExpress}, используя нотацию <<Data Model>>)
+соответствует функциональному дереву
+и изображена на рисунке~\ref{fig:DE_DOC_InventoryList}.
 
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[width=15cm]
-    {assets/ARIS/DataModel/ConceptualModels/DE_DOC_InventoryList.ArisDataModel.pdf}
+    \includegraphics[width=18cm]
+    {assets/ARIS/DataModel/ConceptualModels/ГП_ДОК_ИнвентОпись.png}
 
-    \caption{ЛКМ для процедуры <<Создание инвентаризационной комиссии>>}
+    \caption{Локальная концептуальная модель для процедуры <<Создание инвентаризационной комиссии>>}
 
     \label{fig:DE_DOC_InventoryList}
 \end{figure}
 
-% \begin{figure}[!h]
-%     \centering
-% 
-%     \includegraphics[height=8cm]
-%     {assets/database/DataModel_DOC_InventOpec'.adf.pdf}
-% 
-%     \caption{Локальная концептуальная модель для бизнес процесса с документом <<Инвентаризационная опись>>}
-% 
-%     \label{fig:DataModel_DOC_InventOpic}
-% \end{figure}
+\subsubsection*{Общая концептуальная модель}
 
-% \newpage
-\subsubsection{Общая концептуальная модель}
+Концептуальная модель строится из локальных концептуальных моделей.
 
 Концептуальная модель
-(спроектированна с использованием ARIS Express 2.4 \cite{ArisExpress} Data Model)
+(спроектированна с использованием ARIS Express 2.4 \cite{ArisExpress} нотацией <<Data Model>>)
 состоит из локальных концептуальных моделей и
 изображена на рисунке~\ref{fig:GeneralConceptualModel}.
 
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[width=16cm]
-    {assets/ARIS/DataModel/GeneralConceptualModel/GeneralConceptualModel.ArisDataModel.pdf}
+    \includegraphics[width=18cm]
+    {assets/ARIS/DataModel/GeneralConceptualModel/GeneralConceptualModel.png}
 
     \caption{Общая концептуальная модель}
 
     \label{fig:GeneralConceptualModel}
 \end{figure}
 
-% \begin{figure}[!h]
-%     \centering
-%     \includegraphics[height=8cm]
-%         {assets/database/DataModel_DOC.bundle.adf.pdf}
-%     \caption{Концептуальная модель}
-%     \label{fig:DataModel_DOC}
-% \end{figure}
-
-\newpage
 \subsection{Логическая модель}
 
 \textbf{Логическая модель} - это модель данных конкретной предметной области,
 представленной в виде таблиц и их связей.
 
-Виды связей таблиц в SQL Power Architect 1.0.7 \cite{SqlPowerArhitect}
-изображены на рисунке~\ref{fig:RelationsSqlPowerArchitect}
+Виды связей между таблицами в SQL Power Architect 1.0.7 \cite{SqlPowerArhitect}
+изображены на рисунке~\ref{fig:RelationsSqlPowerArchitect}.
 
 \begin{figure}[!h]
     \centering
@@ -170,8 +123,8 @@
     \label{fig:RelationsSqlPowerArchitect}
 \end{figure}
 
-\textbf{Физическая модель} - это представление в виде SQL скриптов, которые создают таблицы и связи между ними,
-которые получаются из логической модели.
+\textbf{Физическая модель} - это представление в виде SQL скриптов, которые создают таблицы и связи между таблицами,
+которые получаются из логической модели используя генераторы, например, SQL Power Architect.
 
 \textbf{Первая нормальная форма} (1НФ) \cite{habr_1nf_6nf}.
 Отношение находится в 1НФ, если все его атрибуты являются простыми,
@@ -187,7 +140,7 @@
 Отношение находится в 3НФ, когда находится во 2НФ и каждый не ключевой атрибут нетранзитивно зависит от первичного ключа.
 Второе правило требует выносить все не ключевые поля, содержимое которых может относиться к нескольким записям таблицы в отдельные таблицы.
 
-\textbf{Механизмы целостности} нужно для того, чтобы избежать ситуации не правильного заполнения базы данных.
+\textbf{Механизмы целостности} нужны для того, чтобы избежать ситуации не правильного заполнения базы данных.
 Для атрибута выбирается тип данных, а у типа данных есть какой-то домен. Например, суть домена <<Код>> состоит в том,
 что это целое число (тип INTEGER) и оно больше нуля (CHECK id > 0).
 Также могут возникнуть ситуации, когда в базе данных не нужны, либо нужны те или иные атрибуты.
@@ -198,126 +151,7 @@
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-\subsubsection{Механизмы целостности для справочника <<Номенклатура>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Nomenclatures}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_Nomenclatures.png}
-
-    \caption{Таблица DE\_CTL\_Nomenclatures}
-
-    \label{fig:Logic_DE_CTL_Nomenclatures}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для справочника <<Сотрудники>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Employees}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_Employees.png}
-
-    \caption{Таблица DE\_CTL\_Employees}
-
-    \label{fig:Logic_DE_CTL_Employees}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для справочника <<Должности>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Positions}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_Positions.png}
-
-    \caption{Таблица DE\_CTL\_Positions}
-
-    \label{fig:Logic_DE_CTL_Positions}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для справочника <<Единицы хранения>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_StorageUnits}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_StorageUnits.png}
-
-    \caption{Таблица DE\_CTL\_StorageUnits}
-
-    \label{fig:Logic_DE_CTL_StorageUnits}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для справочника <<Мои организации>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_MyOrganization}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_MyOrganization.png}
-
-    \caption{Таблица DE\_CTL\_MyOrganization}
-
-    \label{fig:Logic_DE_CTL_MyOrganization}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для справочника <<Производители>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Producers}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_Producers.png}
-
-    \caption{Таблица DE\_CTL\_Producers}
-
-    \label{fig:Logic_DE_CTL_Producers}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для справочника <<Местра хранения>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_StorageLocations}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=18cm]
-    {assets/database/Types/DE_CTL_StorageLocations.png}
-
-    \caption{Таблица DE\_CTL\_StorageLocations}
-
-    \label{fig:Logic_DE_CTL_StorageLocations}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для документа <<Приказ о создании комиссии>>}
+\subsubsection*{Таблица для оперативного документа <<Приказ о создании инвентаризационной комиссии>>}
 
 Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_DOC_OrderCreationInventoryCommission}.
 
@@ -325,16 +159,101 @@
     \centering
 
     \includegraphics[width=18cm]
-    {assets/database/Types/DE_DOC_OrderCreationInventoryCommission.png}
+    {assets/database/Types/ГП_ДОК_ПриказСозданияИнвентКомиссии.png}
 
-    \caption{Таблица DE\_DOC\_OrderCreationInventoryCommission}
+    \caption{Таблица ГП\_ДОК\_ПриказСозданияИнвентКомиссии}
 
     \label{fig:Logic_DE_DOC_OrderCreationInventoryCommission}
 \end{figure}
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-\subsubsection{Механизмы целостности для документа <<Инвентаризационная опись>>}
+\subsubsection*{Таблица справочного документа <<Мои организации>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_MyOrganization}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_СПР_МоиОрганизации.png}
+
+    \caption{Таблица ГП\_СПР\_МоиОрганизации}
+
+    \label{fig:Logic_DE_CTL_MyOrganization}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Таблица справочного документа <<Места хранения>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_StorageLocations}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_СПР_МестаХранения.png}
+
+    \caption{Таблица ГП\_СПР\_МестаХранения}
+
+    \label{fig:Logic_DE_CTL_StorageLocations}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Табличная часть <<Список членов инвентаризационной комиссии>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_TAB_ListInventoryCommission}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_ТБЧ_СписокЧленовИнвентКомиссии.png}
+
+    \caption{Таблица ГП\_ТБЧ\_СписокЧленовИнвентКомиссии}
+
+    \label{fig:Logic_DE_TAB_ListInventoryCommission}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Таблица справочного документа <<Сотрудники>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Employees}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_СПР_Сотрудники.png}
+
+    \caption{Таблица ГП\_СПР\_Сотрудники}
+
+    \label{fig:Logic_DE_CTL_Employees}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Таблица справочного документа <<Должности>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Positions}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_СПР_Должности.png}
+
+    \caption{Таблица ГП\_СПР\_Должности}
+
+    \label{fig:Logic_DE_CTL_Positions}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Таблица оперативного документа <<Инвентаризационная опись>>}
 
 Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_DOC_InventoryList}.
 
@@ -342,90 +261,255 @@
     \centering
 
     \includegraphics[width=18cm]
-    {assets/database/Types/DE_DOC_InventoryList.png}
+    {assets/database/Types/ГП_ДОК_ИнветОпись.png}
 
-    \caption{Таблица DE\_DOC\_InventoryList}
+    \caption{Таблица ГП\_ДОК\_ИнветОпись}
 
     \label{fig:Logic_DE_DOC_InventoryList}
 \end{figure}
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-\subsubsection{Механизмы целостности для табличной части <<Список членов комиссии>>}
-
-Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_TAB_ListInventoryCommission}.
-
-\begin{figure}[!h]
-    \centering
-
-    \includegraphics[width=16cm]
-    {assets/database/Types/DE_TAB_ListInventoryCommission.png}
-
-    \caption{Таблица DE\_TAB\_ListInventoryCommission}
-
-    \label{fig:Logic_DE_TAB_ListInventoryCommission}
-\end{figure}
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-\subsubsection{Механизмы целостности для табличной части <<Список номенклатуры инвентаризационной описи>>}
+\subsubsection*{Табличная часть <<Список номенклатуры инвентаризационной описи>>}
 
 Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_TAB_NomenclatureInventList}.
 
 \begin{figure}[!h]
     \centering
 
-    \includegraphics[width=16cm]
-    {assets/database/Types/DE_TAB_NomenclatureInventList.png}
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_ТБЧ_СписокНоменклИнвентОписи.png}
 
-    \caption{Таблица DE\_TAB\_NomenclatureInventList}
+    \caption{Таблица ГП\_ТБЧ\_СписокНоменклИнвентОписи}
 
     \label{fig:Logic_DE_TAB_NomenclatureInventList}
 \end{figure}
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-\subsubsection{Проектирование логической модели}
+\subsubsection*{Таблица справочного документа <<Номенклатура>>}
 
-Логическая модель доведенная до третьей нормальной формы,
-спроектированная в SQL Power Architect 1.0.7 \cite{SqlPowerArhitect},
-изображена на рисунке~\ref{fig:ArchitectureDatabase}.
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Nomenclatures}.
 
 \begin{figure}[!h]
     \centering
 
     \includegraphics[width=18cm]
-    {assets/database/LogicModel.SqlPowerArchitect.architect.pdf}
+    {assets/database/Types/ГП_СПР_Номенклатура.png}
+
+    \caption{Таблица ГП\_СПР\_Номенклатура}
+
+    \label{fig:Logic_DE_CTL_Nomenclatures}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Механизмы целостности для справочника <<Единицы хранения>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_StorageUnits}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_СПР_ЕдиницыХранения.png}
+
+    \caption{Таблица ГП\_СПР\_ЕдиницыХранения}
+
+    \label{fig:Logic_DE_CTL_StorageUnits}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Механизмы целостности для справочника <<Производители>>}
+
+Таблица с механизмами целостности изображена на рисунке~\ref{fig:Logic_DE_CTL_Producers}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/Types/ГП_СПР_Производители.png}
+
+    \caption{Таблица ГП\_СПР\_Производители}
+
+    \label{fig:Logic_DE_CTL_Producers}
+\end{figure}
+
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\subsubsection*{Проектирование логической модели}
+
+Логическая модель доведенная до третьей нормальной формы,
+спроектированная в SQL Power Architect 1.0.7 \cite{SqlPowerArhitect},
+изображена на рисунке~\ref{fig:logic_model}.
+
+\begin{figure}[!h]
+    \centering
+
+    \includegraphics[width=18cm]
+    {assets/database/SqlPowerArchitect/logic_model.pdf}
 
     \caption{Логическая модель}
 
-    \label{fig:ArchitectureDatabase}
+    \label{fig:logic_model}
 \end{figure}
 
-\newpage
 \subsection{Физическая модель}
 
-\textbf{Физическая модель} - это представление в виде SQL скриптов, которые создают таблицы и связи между ними,
-которые получаются из логической модели.
+\textbf{Физическая модель} - это представление в виде SQL скриптов, которые создают таблицы и связи между таблицами,
+которые получаются из логической модели используя генераторы, например, SQL Power Architect.
 
-Для начала создадим базу данных. Её можно быстро создать через консоль.
+% Docker - программа, которая устанавливает в изолированном контейнере программу.
+% Например, можно установить в контейнере MySQL. Для этого нужен файл <<docker-compose.mysql.yml>> и файл с паролями <<.env>>.
 
-\begin{lstlisting}[name=Создание базы данных в Postgres]
-psql -U st190333_ -d postgres -h localhost -W
-CREATE DATABASE st190333_7sem_coursework;
-exit
-exit
-\end{lstlisting}
+% \begin{lstlisting}[language=bash, name={Установка Docker}]
+% sudo apt update
+% sudo apt install docker
+% sudo apt install docker-compose
+% \end{lstlisting}
+
+% \begin{lstlisting}[name={docker-compose.mysql.yml}]
+% version: "3"
+
+% services:
+%     db:
+%     image: mysql:8.0
+%     ports:
+%         - 3307:3306
+%     command: --default-authentication-plugin=mysql_native_password
+%     environment:
+%         MYSQL_DATABASE: ${MYSQL_DATABASE}
+%         MYSQL_USER: ${MYSQL_USER}
+%         MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+%         MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+%     volumes:
+%         - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
+%         - ./docker/mysql/etc/mysql/conf.d:/etc/mysql/conf.d
+%         - ./docker/mysql/var/lib/mysql:/var/lib/mysql
+%     phpmyadmin:
+%     image: phpmyadmin/phpmyadmin
+%     container_name: phpmyadmin
+%     links: 
+%         - db:db
+%     ports:
+%         - 3080:80
+%     environment:
+%         MYSQL_USER: ${MYSQL_USER}
+%         MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+%         MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD} 
+% \end{lstlisting}
+
+% \begin{lstlisting}[name={Файл с секретами .env}]
+% MYSQL_DATABASE=database
+% MYSQL_USER=super_secret_user
+% MYSQL_PASSWORD=super_secret_password
+% MYSQL_ROOT_PASSWORD=super_secret_root_password
+% \end{lstlisting}
+
+% \begin{lstlisting}[language=bash, name={Запуск базы данных}]
+% docker-compose -f database/docker-compose.mysql.yml up
+% \end{lstlisting}
+
+% \begin{lstlisting}[language=bash, name={Установка консольного клиента}]
+% sudo apt update
+% sudo apt install mysql-client
+% \end{lstlisting}
+
+% \begin{lstlisting}[language=bash, name={Подключение через консольный клиент}]
+% mysql -h localhost -P 3307 --protocol=tcp -u super_secret_user -D database -p'super_secret_password'
+% source ./logic_model_create.sql # выполняем SQL скрипт
+% exit
+% \end{lstlisting}
+
+% \begin{lstlisting}[name=Установка MySQL на Linux Ubuntu 22.04]
+% sudo apt update
+% sudo apt install mysql-server
+% sudo systemctl start mysql.service
+
+% sudo mysql
+% ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '((super#SECRET#password#123))';
+% exit
+% \end{lstlisting}
+
+% \begin{lstlisting}[name=Установка пароля root для MySQL]
+% sudo mysql
+% ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '((super#SECRET#password#123))';
+% exit
+
+% sudo mysql -u root -p # вводим пароль ((super#SECRET#password#123))
+% ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+% \end{lstlisting}
+
+% \begin{lstlisting}[name=Создание базы данных]
+% sudo mysql -u root -p # вводим пароль ((super#SECRET#password#123))
+% CREATE DATABASE st190333_7sem_coursework;
+% exit
+% \end{lstlisting}
+
+% \begin{lstlisting}[name=Создание пользователя]
+% sudo mysql -u root -p # вводим пароль ((super#SECRET#password#123))
+% CREATE USER 'st190333_'@'localhost' IDENTIFIED WITH mysql_native_password BY '((SUPER#secret#password#123))';
+% exit
+% \end{lstlisting}
+
+% \begin{lstlisting}[name=Создание пользователя]
+% sudo snap install mysql-workbench-community
+% \end{lstlisting}
 
 Физическую модель получим из логической модели нажав кнопку <<Forward Engineer SQL Script>>
 в SQL Power Arhitect 1.0.7 \cite{SqlPowerArhitect}.
+Так как SQL Power Architect не имеет возможности генерировать CHECK'и,
+то пропишем их в скрипте сами.
 
-\lstinputlisting[language=sql]
-{assets/database/SQL_CreateTable.sql}
+Для удобства проверки БД использовались скрипт удаления БД DROP DATABASE \cite{MssqlDropDatabase} (см. листинг~\ref{lst:DropDatabase})
+и скрипт создания БД CREATE DATABASE \cite{MssqlCreateDatabase} (см. листинг~\ref{lst:CreateDatabase}).
 
-Чтобы быстро удалить базу данных можем использовать скрипт с DROP TABLE SQL-командами.
+\begin{lstlisting}[caption={Удаление базы данных\label{lst:DropDatabase}}]
+DROP DATABASE [ IF EXISTS ] <имяБД>
+[;]
+\end{lstlisting}
 
-\lstinputlisting[language=sql]
-{assets/database/SQL_DropTable.sql}
+\begin{lstlisting}[caption={Создание базы данных\label{lst:CreateDatabase}}]
+CREATE DATABASE <имяБД>
+[;]
+\end{lstlisting}
+
+Таблицы создаются через команду CREATE TABLE \cite{MssqlCreateTable} (см. листинг~\ref{lst:CreateTable}).
+
+\begin{lstlisting}[caption={Создание таблицы\label{lst:CreateTable}}]
+CREATE TABLE { <имяБД>.<имяСхемы>.<имяТаблицы> | <имяСхемы>.<имяТаблицы> | <имяТаблицы> }
+(
+    <атрибут> <тип> [NOT NULL] [DEFAULT <значение>] [CHECK(<атрибут> <условие>)]
+    [ , <атрибут> <тип> [NOT NULL] [DEFAULT <значение>] [CHECK(<атрибут> <условие>)]]
+)
+[ ; ]
+\end{lstlisting}
+
+Таблицы связываем по полям, используя ALTER TABLE \cite{MssqlAlterTable} (см. листинг~\ref{lst:AlterTable}), чтобы исключить случай удаления данных, которые зависят от нашей таблицы.
+
+\begin{lstlisting}[caption={Связываем таблицы по полям\label{lst:AlterTable}}]
+ALTER TABLE <имяТаблицы> ADD CONSTRAINT <имяВнешнегоКлюча>__fk
+FOREIGN KEY (<имяАтрибутаТаблицы>)
+REFERENCES <имяВторойТаблицы> (<имяАтрибутаТаблицы>)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+[;]
+\end{lstlisting}
+
+В СУБД Microsoft SQL Server есть возможность создавать свой тип данных через команду CREATE TYPE \cite{MssqlCreateType} (см. листинг~\ref{lst:CreateType}).
+
+\begin{lstlisting}[caption={Связываем таблицы по полям\label{lst:CreateType}}]
+CREATE TYPE
+    FROM <тип> [NOT NULL]
+[;]
+\end{lstlisting}
+
+SQL-скрипт генерируется в SQL Power Architect \cite{SqlPowerArhitect} при проектировании логической модели.
+Это скрипт можно подредактировать добавив типы данных (CREATE TYPE) и добавив ограничения (CHECK).
+Готовый скрипт изображен на листинге~\ref{lst:sqlScript}.
+
+\lstinputlisting[language=sql, caption={Скрипт создания БД и таблиц в ней\label{lst:sqlScript}}]
+{sql/0.sql}
 
 \newpage

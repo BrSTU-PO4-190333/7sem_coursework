@@ -1,4 +1,0 @@
-                  id                  | de_number |  de_date   | de_myorganizationsid | de_storagelocationsid | de_chairmancommissionid | de_ordercreatorid 
---------------------------------------+-----------+------------+----------------------+-----------------------+-------------------------+-------------------
- aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeee1 | 1         | 2022-05-10 |                    1 |                     1 |                       2 |                 1
-(1 row)
